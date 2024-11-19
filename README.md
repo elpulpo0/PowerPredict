@@ -19,3 +19,5 @@ Prédiction de la consommation d'énergie d'un bâtiment
 ```bash
 python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
+```
+
