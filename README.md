@@ -1,4 +1,4 @@
-# PowerProdict
+# PowerPredict
 Prédiction de la consommation d'énergie d'un bâtiment
 
 ## Créer un environement virtuel
