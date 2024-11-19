@@ -14,11 +14,8 @@ Prédiction de la consommation d'énergie d'un bâtiment
 - bash(windows):
 `source __venv/Scripts/activate`
 
-**Install librairies**
+## Installer les dépendances
 
 ```bash
 python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
-```
-
-
