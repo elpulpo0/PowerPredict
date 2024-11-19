@@ -21,7 +21,4 @@ python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### Installer les dépendances
 
-```pip install --upgrade pip```
-```pip install -r requirements_local.txt```
