@@ -18,7 +18,7 @@ VALID_COLUMNS = [
 ]
 
 @router.get(
-    "/data/",
+    "/data",
     response_model=dict,
     responses={
         200: {
@@ -26,7 +26,7 @@ VALID_COLUMNS = [
             "content": {
                 "application/json": {
                     "example": {
-                        "table_name": "PowerPredict",
+                        "table_name": "clean_data",
                         "filters": {
                             "annee_consommation": 2020,
                             "zone_climatique": "GUA",
@@ -85,7 +85,7 @@ VALID_COLUMNS = [
     },
 )
 
-async def get_powerpredict_data(
+async def get_clean_data_data(
     annee_consommation: Optional[int] = Query(None, description="Filtrer par année de consommation"),
     zone_climatique: Optional[str] = Query(None, description="Filtrer par zone climatique"),
     code_region: Optional[str] = Query(None, description="Filtrer par code région"),
@@ -93,10 +93,10 @@ async def get_powerpredict_data(
     nom_commune: Optional[str] = Query(None, description="Filtrer par nom de commune"),
 ):
     """
-    Récupérer les données de la table PowerPredict avec des filtres optionnels.
+    Récupérer les données de la table clean_data avec des filtres optionnels.
     """
     try:
-        logger.info("Récupération des données filtrées de PowerPredict.")
+        logger.info("Récupération des données filtrées de clean_data.")
 
         filters = {col: value for col, value in locals().items() if value is not None and col in VALID_COLUMNS}
 
@@ -105,7 +105,7 @@ async def get_powerpredict_data(
             logger.warning("Aucune donnée trouvée pour les critères fournis.")
             raise HTTPException(status_code=404, detail="Aucune donnée trouvée pour les critères fournis.")
         
-        return {"table_name": "PowerPredict", "filters": filters, "data": data}
+        return {"table_name": "clean_data", "filters": filters, "data": data}
     except HTTPException as http_exc:
         raise http_exc
     except Exception as e:
@@ -114,7 +114,7 @@ async def get_powerpredict_data(
     
 
 @router.get(
-    "/health/",
+    "/health",
     response_model=dict,
     tags=["Santé API"],
     responses={
