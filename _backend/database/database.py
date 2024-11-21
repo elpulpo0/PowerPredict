@@ -1,30 +1,34 @@
 import sqlite3
-from pathlib import Path
-from typing import List, Dict
+from typing import Dict, Any
+from loguru import logger
 
-# Chemin vers la base de données
-DATABASE_PATH = Path(__file__).parent / "database.db"
+class Database:
+    def __init__(self, db_url: str):
+        self.db_url = db_url
 
-class SQLiteDatabase:
-    def __init__(self, db_path: Path):
-        self.db_path = db_path
+    def fetch_filtered_data(self, filters: Dict[str, Any]):
+        """
+        Récupérer les données de la table 'PowerPredict' avec des filtres.
 
-    def connect(self):
-        return sqlite3.connect(self.db_path)
+        Args:
+            filters (Dict): Un dictionnaire contenant les colonnes et les valeurs à filtrer.
 
-    def get_table_names(self) -> List[str]:
-        with self.connect() as conn:
+        Returns:
+            List[Dict]: Liste de dictionnaires représentant les données filtrées.
+        """
+        try:
+            query = f"SELECT * FROM PowerPredict WHERE " + " AND ".join([f"{key} = ?" for key in filters.keys()])
+            conn = sqlite3.connect(self.db_url)
             cursor = conn.cursor()
-            cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-            tables = [row[0] for row in cursor.fetchall()]
-        return tables
+            cursor.execute(query, tuple(filters.values()))
+            rows = cursor.fetchall()
+            conn.close()
 
-    def fetch_table_data(self, table_name: str) -> List[Dict]:
-        with self.connect() as conn:
-            cursor = conn.cursor()
-            cursor.execute(f"SELECT * FROM {table_name};")
-            columns = [description[0] for description in cursor.description]
-            data = [dict(zip(columns, row)) for row in cursor.fetchall()]
-        return data
+            columns = [column[0] for column in cursor.description]
+            return [dict(zip(columns, row)) for row in rows]
+        
+        except sqlite3.Error as e:
+            logger.error(f"Erreur lors de la récupération des données filtrées de la table PowerPredict : {e}")
+            return []
 
-db = SQLiteDatabase(DATABASE_PATH)
+db = Database('database/sqlite/power_predict.db')

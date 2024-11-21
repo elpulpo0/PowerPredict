@@ -1,67 +1,139 @@
-from fastapi import APIRouter, HTTPException
-from _backend.database.database import db
+from fastapi import APIRouter, HTTPException, Query
+from typing import Optional
+from database.database import db
 from loguru import logger
 
 router = APIRouter()
 
-logger.add(
-    format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}",
-    level="INFO"
+VALID_COLUMNS = [
+    "annee_consommation",
+    "zone_climatique",
+    "code_region",
+    "code_departement",
+    "nom_commune",
+    "nombre_declaration",
+    "surface_declaree",
+    "consommation_declaree",
+    "vecteur_energie",
+]
+
+@router.get(
+    "/data/",
+    response_model=dict,
+    responses={
+        200: {
+            "description": "Données récupérées avec succès.",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "table_name": "PowerPredict",
+                        "filters": {
+                            "annee_consommation": 2020,
+                            "zone_climatique": "GUA",
+                            "nom_commune": "BAILLIF"
+                        },
+                        "data": [
+                            {
+                                "annee_consommation": "2020",
+                                "zone_climatique": "GUA",
+                                "code_region": "01",
+                                "code_departement": "971",
+                                "nom_commune": "BAILLIF",
+                                "nombre_declaration": 6,
+                                "surface_declaree": 7746,
+                                "consommation_declaree": 1085220,
+                                "vecteur_energie": "Electricite"
+                            }
+                        ],
+                    }
+                }
+            },
+        },
+        404: {
+            "description": "Aucune donnée trouvée pour les critères fournis.",
+            "content": {
+                "application/json": {
+                    "example": {"detail": "Aucune donnée trouvée pour les critères fournis."}
+                }
+            },
+        },
+        422: {
+            "description": "Unprocessable Entity - La requête ne peut être traitée.",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "detail": [
+                            {
+                                "type": "int_parsing",
+                                "loc": ["query", "annee_consommation"],
+                                "msg": "Input should be a valid integer, unable to parse string as an integer",
+                                "input": "abc"
+                            }
+                        ]
+                    }
+                }
+            },
+        },
+        500: {
+            "description": "Erreur serveur interne.",
+            "content": {
+                "application/json": {
+                    "example": {"detail": "Erreur serveur interne. Impossible de récupérer les données."}
+                }
+            },
+        },
+    },
 )
 
-
-@router.get("/tables/", response_model=dict)
-async def list_tables():
+async def get_powerpredict_data(
+    annee_consommation: Optional[int] = Query(None, description="Filtrer par année de consommation"),
+    zone_climatique: Optional[str] = Query(None, description="Filtrer par zone climatique"),
+    code_region: Optional[str] = Query(None, description="Filtrer par code région"),
+    code_departement: Optional[str] = Query(None, description="Filtrer par code département"),
+    nom_commune: Optional[str] = Query(None, description="Filtrer par nom de commune"),
+):
     """
-    Obtenir la liste des tables disponibles dans la base de données.
-
-    Returns:
-        dict: Un dictionnaire contenant la liste des tables disponibles.
-    """
-    try:
-        logger.info("Récupération des noms de tables.")
-        tables = db.get_table_names()
-        if not tables:
-            logger.warning("Aucune table trouvée dans la base de données.")
-        return {"tables": tables}
-    except Exception as e:
-        logger.error(f"Erreur lors de la récupération des noms de tables : {e}")
-        raise HTTPException(status_code=500, detail="Erreur serveur lors de la récupération des tables.")
-
-
-@router.get("/tables/{table_name}/data/", response_model=dict)
-async def get_table_data(table_name: str):
-    """
-    Récupérer les données d'une table spécifique.
-
-    Args:
-        table_name (str): Le nom de la table à récupérer.
-
-    Returns:
-        dict: Un dictionnaire contenant le nom de la table et ses données.
-
-    Raises:
-        HTTPException: Si la table n'existe pas ou si une erreur se produit.
+    Récupérer les données de la table PowerPredict avec des filtres optionnels.
     """
     try:
-        logger.info(f"Récupération des données pour la table '{table_name}'.")
-        data = db.fetch_table_data(table_name)
+        logger.info("Récupération des données filtrées de PowerPredict.")
+
+        filters = {col: value for col, value in locals().items() if value is not None and col in VALID_COLUMNS}
+
+        data = db.fetch_filtered_data(filters)
         if not data:
-            logger.warning(f"Aucune donnée trouvée dans la table '{table_name}'.")
-            raise HTTPException(status_code=404, detail=f"Aucune donnée trouvée dans la table '{table_name}'.")
-        return {"table_name": table_name, "data": data}
+            logger.warning("Aucune donnée trouvée pour les critères fournis.")
+            raise HTTPException(status_code=404, detail="Aucune donnée trouvée pour les critères fournis.")
+        
+        return {"table_name": "PowerPredict", "filters": filters, "data": data}
+    except HTTPException as http_exc:
+        raise http_exc
     except Exception as e:
-        logger.error(f"Erreur lors de la récupération des données pour la table '{table_name}' : {e}")
-        raise HTTPException(status_code=500, detail=f"Erreur serveur lors de la récupération des données pour '{table_name}'.")
+        logger.error(f"Erreur lors de la récupération des données : {e}")
+        raise HTTPException(status_code=500, detail="Erreur serveur lors de la récupération des données.")
+    
 
-
-@router.get("/health/", response_model=dict)
+@router.get(
+    "/health/",
+    response_model=dict,
+    tags=["Santé API"],
+    responses={
+        200: {
+            "description": "L'API est en ligne et fonctionnelle.",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "status": "API en ligne et fonctionnelle."
+                    }
+                }
+            },
+        },
+    },
+)
 async def health_check():
     """
-    Vérifier l'état de santé de l'API.
-
-    Returns:
-        dict: Un message indiquant que l'API fonctionne.
+    ### Vérifier l'état de santé de l'API
+    Renvoie un message indiquant que l'API est fonctionnelle.
     """
     logger.info("Vérification de l'état de santé de l'API.")
     return {"status": "API en ligne et fonctionnelle."}
