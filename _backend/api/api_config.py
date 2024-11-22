@@ -1,4 +1,4 @@
-VALID_COLUMNS = [
+VALID_COLUMNS_DATA = [
     "annee_consommation",
     "zone_climatique",
     "code_region",
@@ -9,6 +9,9 @@ VALID_COLUMNS = [
     "consommation_declaree",
     "vecteur_energie",
 ]
+
+VALID_COLUMNS_TRAIN = ['id', 'nombre_declaration', 'surface_declaree', 'annee_consommation_2020', 'annee_consommation_2021', 'annee_consommation_2022', 'annee_consommation_Année de référence', 'zone_climatique_GUA', 'zone_climatique_GUY', 'zone_climatique_H1a', 'zone_climatique_H1b', 'zone_climatique_H1c', 'zone_climatique_H2a', 'zone_climatique_H2b', 'zone_climatique_H2c', 'zone_climatique_H2d', 'zone_climatique_H3', 'zone_climatique_MAR', 'zone_climatique_MAY', 'zone_climatique_REU', 'code_region_00', 'code_region_01', 'code_region_02', 'code_region_03', 'code_region_04', 'code_region_06', 'code_region_11', 'code_region_24', 'code_region_27', 'code_region_28', 'code_region_32', 'code_region_44', 'code_region_52', 'code_region_53', 'code_region_75', 'code_region_76', 'code_region_84', 'code_region_93', 'code_region_94', 'code_region_ND', 'code_departement_encoded', 'commune_frequency', 'vecteur_energie_Bois', 'vecteur_energie_Electricite', 'vecteur_energie_Fioul', 'vecteur_energie_Gaz', 'vecteur_energie_Non spécifié', 'vecteur_energie_Reseau de chaleur', 'vecteur_energie_Reseau de froid', 'annee_consommation_reference', 'densite_energetique', 'ratio_declaration_consommation', 'consommation_relative_climat', 'surface_par_declaration', 'consommation_log', 'consommation_declaree', 'consommation_anormale_Anormale', 'consommation_anormale_Normale']
+VALID_COLUMNS_TEST = VALID_COLUMNS_TRAIN
 
 # Réponses routes API
 
@@ -102,6 +105,14 @@ responses_home={
         },
     }
 
+responses_test_train={
+        200: {"description": "Données encodées récupérées avec succès."},
+        404: {"description": "Aucune donnée trouvée."},
+        500: {"description": "Erreur serveur."},
+    }
+
+# Arguments FastAPI
+
 initialisation_FastAPI = {
     "title": "PowerPredict API",
     "description": (
@@ -115,13 +126,12 @@ initialisation_FastAPI = {
             "description": "Endpoints pour interagir avec les données PowerPredict.",
         },
         {
+            "name": "Données Encodées",
+            "description": "Endpoints pour interagir avec les données encodées",
+        },
+        {
             "name": "Santé API",
             "description": "Endpoint pour vérifier l'état de santé de l'API.",
         },
-        {
-            "name": "Home",
-            "description": "Endpoint de démarrage de l'API.",
-        },
     ],
 }
-
