@@ -149,7 +149,7 @@ async def health_check():
             "content": {
                 "application/json": {
                     "example": {
-                        "Bienvenue sur l'API PowerPredict, visite /docs pour l'exploiter"
+                        "message": "Bienvenue sur l'API PowerPredict, visite /docs pour l'exploiter"
                     }
                 }
             },
@@ -161,4 +161,4 @@ async def home():
     ### Racine de l'API.
     Renvoie un message de bienvenue.
     """
-    return {"Bienvenue sur l'API PowerPredict, visite /docs pour l'exploiter"}
+    return {"message": "Bienvenue sur l'API PowerPredict, visite /docs pour l'exploiter"}
