@@ -1,27 +1,7 @@
 from fastapi import FastAPI
 from api.api import router as api_router
+from api.api_config import initialisation_FastAPI
 
-app = FastAPI(
-    title="PowerPredict API",
-    description=(
-        "Une API pour interagir avec les données PowerPredict. "
-        "Elle permet de filtrer les données et de vérifier l'état de l'application."
-    ),
-    version="1.0.0",
-    openapi_tags=[
-        {
-            "name": "Données PowerPredict",
-            "description": "Endpoints pour interagir avec les données PowerPredict.",
-        },
-        {
-            "name": "Santé API",
-            "description": "Endpoint pour vérifier l'état de santé de l'API.",
-        },
-        {
-            "name": "Home",
-            "description": "Endpoint de démarrage de l'API.",
-        },
-    ],
-)
+app = FastAPI(**initialisation_FastAPI)
 
 app.include_router(api_router)

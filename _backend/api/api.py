@@ -2,90 +2,16 @@ from fastapi import APIRouter, HTTPException, Query
 from typing import Optional
 from database.database import db
 from loguru import logger
+from .api_config import VALID_COLUMNS, responses_data, responses_health, responses_home
 
 router = APIRouter()
-
-VALID_COLUMNS = [
-    "annee_consommation",
-    "zone_climatique",
-    "code_region",
-    "code_departement",
-    "nom_commune",
-    "nombre_declaration",
-    "surface_declaree",
-    "consommation_declaree",
-    "vecteur_energie",
-]
 
 @router.get(
     "/data",
     response_model=dict,
     tags=["Données PowerPredict"],
-    responses={
-        200: {
-            "description": "Données récupérées avec succès.",
-            "content": {
-                "application/json": {
-                    "example": {
-                        "table_name": "clean_data",
-                        "filters": {
-                            "annee_consommation": 2020,
-                            "zone_climatique": "GUA",
-                            "nom_commune": "BAILLIF"
-                        },
-                        "data": [
-                            {
-                                "annee_consommation": "2020",
-                                "zone_climatique": "GUA",
-                                "code_region": "01",
-                                "code_departement": "971",
-                                "nom_commune": "BAILLIF",
-                                "nombre_declaration": 6,
-                                "surface_declaree": 7746,
-                                "consommation_declaree": 1085220,
-                                "vecteur_energie": "Electricite"
-                            }
-                        ],
-                    }
-                }
-            },
-        },
-        404: {
-            "description": "Aucune donnée trouvée pour les critères fournis.",
-            "content": {
-                "application/json": {
-                    "example": {"detail": "Aucune donnée trouvée pour les critères fournis."}
-                }
-            },
-        },
-        422: {
-            "description": "Unprocessable Entity - La requête ne peut être traitée.",
-            "content": {
-                "application/json": {
-                    "example": {
-                        "detail": [
-                            {
-                                "type": "int_parsing",
-                                "loc": ["query", "annee_consommation"],
-                                "msg": "Input should be a valid integer, unable to parse string as an integer",
-                                "input": "abc"
-                            }
-                        ]
-                    }
-                }
-            },
-        },
-        500: {
-            "description": "Erreur serveur interne.",
-            "content": {
-                "application/json": {
-                    "example": {"detail": "Erreur serveur interne. Impossible de récupérer les données."}
-                }
-            },
-        },
-    },
+    responses=responses_data
 )
-
 async def get_clean_data_data(
     annee_consommation: Optional[int] = Query(None, description="Filtrer par année de consommation"),
     zone_climatique: Optional[str] = Query(None, description="Filtrer par zone climatique"),
@@ -113,23 +39,11 @@ async def get_clean_data_data(
         logger.error(f"Erreur lors de la récupération des données : {e}")
         raise HTTPException(status_code=500, detail="Erreur serveur lors de la récupération des données.")
     
-
 @router.get(
     "/health",
     response_model=dict,
     tags=["Santé API"],
-    responses={
-        200: {
-            "description": "L'API est en ligne et fonctionnelle.",
-            "content": {
-                "application/json": {
-                    "example": {
-                        "status": "API en ligne et fonctionnelle."
-                    }
-                }
-            },
-        },
-    },
+    responses=responses_health
 )
 async def health_check():
     """
@@ -143,18 +57,7 @@ async def health_check():
     "/",
     response_model=dict,
     tags=["Home"],
-    responses={
-        200: {
-            "description": "Bienvenue sur l'API PowerPredict, visite /docs pour l'exploiter",
-            "content": {
-                "application/json": {
-                    "example": {
-                        "message": "Bienvenue sur l'API PowerPredict, visite /docs pour l'exploiter"
-                    }
-                }
-            },
-        },
-    },
+    responses=responses_home
 )
 async def home():
     """
