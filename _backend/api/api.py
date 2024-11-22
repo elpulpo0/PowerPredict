@@ -20,6 +20,7 @@ VALID_COLUMNS = [
 @router.get(
     "/data",
     response_model=dict,
+    tags=["Données PowerPredict"],
     responses={
         200: {
             "description": "Données récupérées avec succès.",
@@ -137,3 +138,27 @@ async def health_check():
     """
     logger.info("Vérification de l'état de santé de l'API.")
     return {"status": "API en ligne et fonctionnelle."}
+
+@router.get(
+    "/",
+    response_model=dict,
+    tags=["Home"],
+    responses={
+        200: {
+            "description": "Bienvenue sur l'API PowerPredict, visite /docs pour l'exploiter",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "Bienvenue sur l'API PowerPredict, visite /docs pour l'exploiter"
+                    }
+                }
+            },
+        },
+    },
+)
+async def home():
+    """
+    ### Racine de l'API.
+    Renvoie un message de bienvenue.
+    """
+    return {"Bienvenue sur l'API PowerPredict, visite /docs pour l'exploiter"}

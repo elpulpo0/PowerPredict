@@ -15,7 +15,11 @@ app = FastAPI(
         },
         {
             "name": "Santé API",
-            "description": "Endpoints pour vérifier l'état de santé de l'API.",
+            "description": "Endpoint pour vérifier l'état de santé de l'API.",
+        },
+        {
+            "name": "Home",
+            "description": "Endpoint de démarrage de l'API.",
         },
     ],
 )
