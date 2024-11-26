@@ -15,69 +15,68 @@ VALID_COLUMNS_TEST = VALID_COLUMNS_TRAIN
 
 # Réponses routes API
 
-responses_data={
-        200: {
-            "description": "Données récupérées avec succès.",
-            "content": {
-                "application/json": {
-                    "example": {
-                        "table_name": "clean_data",
-                        "filters": {
+responses_data = {
+    200: {
+        "description": "Données récupérées avec succès.",
+        "content": {
+            "application/json": {
+                "example": {
+                    "table_name": "consommation",
+                    "filters": {
+                        "annee_consommation": 2020,
+                        "nom_commune": "BAILLIF"
+                    },
+                    "data": [
+                        {
                             "annee_consommation": 2020,
-                            "zone_climatique": "GUA",
-                            "nom_commune": "BAILLIF"
-                        },
-                        "data": [
-                            {
-                                "annee_consommation": "2020",
-                                "zone_climatique": "GUA",
-                                "code_region": "01",
-                                "code_departement": "971",
-                                "nom_commune": "BAILLIF",
-                                "nombre_declaration": 6,
-                                "surface_declaree": 7746,
-                                "consommation_declaree": 1085220,
-                                "vecteur_energie": "Electricite"
-                            }
-                        ],
-                    }
+                            "surface_declaree": 7746,
+                            "nombre_declaration": 6,
+                            "consommation_declaree": 1085220,
+                            "nom_commune": "BAILLIF",
+                            "nom_departement": "Guadeloupe",
+                            "nom_region": "Antilles",
+                            "vecteur_energie": "Electricite",
+                            "zone_climatique": "GUA"
+                        }
+                    ],
                 }
-            },
+            }
         },
-        404: {
-            "description": "Aucune donnée trouvée pour les critères fournis.",
-            "content": {
-                "application/json": {
-                    "example": {"detail": "Aucune donnée trouvée pour les critères fournis."}
+    },
+    404: {
+        "description": "Aucune donnée trouvée pour les critères fournis.",
+        "content": {
+            "application/json": {
+                "example": {"detail": "Aucune donnée trouvée pour les critères fournis."}
+            }
+        },
+    },
+    422: {
+        "description": "Unprocessable Entity - La requête ne peut être traitée.",
+        "content": {
+            "application/json": {
+                "example": {
+                    "detail": [
+                        {
+                            "type": "int_parsing",
+                            "loc": ["query", "annee_consommation"],
+                            "msg": "Input should be a valid integer, unable to parse string as an integer",
+                            "input": "abc"
+                        }
+                    ]
                 }
-            },
+            }
         },
-        422: {
-            "description": "Unprocessable Entity - La requête ne peut être traitée.",
-            "content": {
-                "application/json": {
-                    "example": {
-                        "detail": [
-                            {
-                                "type": "int_parsing",
-                                "loc": ["query", "annee_consommation"],
-                                "msg": "Input should be a valid integer, unable to parse string as an integer",
-                                "input": "abc"
-                            }
-                        ]
-                    }
-                }
-            },
+    },
+    500: {
+        "description": "Erreur serveur interne.",
+        "content": {
+            "application/json": {
+                "example": {"detail": "Erreur serveur interne. Impossible de récupérer les données."}
+            }
         },
-        500: {
-            "description": "Erreur serveur interne.",
-            "content": {
-                "application/json": {
-                    "example": {"detail": "Erreur serveur interne. Impossible de récupérer les données."}
-                }
-            },
-        },
-    }
+    },
+}
 
 responses_health={
         200: {
@@ -125,10 +124,10 @@ initialisation_FastAPI = {
             "name": "Données PowerPredict",
             "description": "Endpoints pour interagir avec les données PowerPredict.",
         },
-        {
-            "name": "Données Encodées",
-            "description": "Endpoints pour interagir avec les données encodées",
-        },
+        # {
+        #     "name": "Données Encodées",
+        #     "description": "Endpoints pour interagir avec les données encodées",
+        # },
         {
             "name": "Santé API",
             "description": "Endpoint pour vérifier l'état de santé de l'API.",
