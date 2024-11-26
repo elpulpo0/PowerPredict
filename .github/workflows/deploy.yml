@@ -1,9 +1,9 @@
 name: PowerPredict Deploy
 on:
   push:
-    branches: [ main, api ]
+    branches: [ api ]
   pull_request:
-    branches: [ main, api ]
+    branches: [ api ]
 jobs:
   build:
     runs-on: ubuntu-latest
