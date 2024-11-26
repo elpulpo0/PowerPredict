@@ -22,7 +22,7 @@ jobs:
         pip install -r requirements.txt
 
 
-    tests
+    # tests
     - name: Run unit tests (un fichier)
       run: |
         pytest _backend/tests/test_api.py
