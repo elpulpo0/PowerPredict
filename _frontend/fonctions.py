@@ -2,11 +2,11 @@ import pandas as pd
 import requests
 import streamlit as st 
 
-def fetch_table_names(api_url):
+def fetch_table_names(api_url="https://powerpredict.onrender.com"):
     """
     Fetch noms de table depuis l'API
     args:
-        api_url (str): URL de l'API
+        api_url (str): URL de l'API (e.g., "https://powerpredict.onrender.com/tables")
     Returns:
         list: Liste des noms de table
     """
@@ -26,7 +26,7 @@ def fetch_table_names(api_url):
         """ 
         Fetch data from a table in the API
         Args:
-            api_url (str): URL of the API
+            api_url (str): URL of the API (e.g., "https://powerpredict.onrender.com/data")
             table_name (str): Name of the table
         Returns:
             pd.DataFrame: Data from the table
@@ -53,15 +53,15 @@ def paginate_data(dataframe, page_size):
     Returns:
         pd.DataFrame: Dataframe de la page
     """
-total_rows = len(dataframe)
-total_pages = (total_rows // page_size)  + (1 if total_rows % page_size != 0 else 0)
+    total_rows = len(dataframe)
+    total_pages = (total_rows // page_size)  + (1 if total_rows % page_size != 0 else 0)
 
-#nro de page
-page_number = st.sidebar.number_input("Page", min_value=1, max_value=total_pages, value=1,step=1)
+    #nro de page
+    page_number = st.sidebar.number_input("Page", min_value=1, max_value=total_pages, value=1,step=1)
 
-start_row = (page_number - 1) * page_size
-end_row = start_row + page_size
+    start_row = (page_number - 1) * page_size
+    end_row = start_row + page_size
 
-st.caption(f"Page {page_number} of {total_pages}")
-return dataframe.iloc[start_row:end_row]
+    st.caption(f"Page {page_number} of {total_pages}")
+    return dataframe.iloc[start_row:end_row]
 

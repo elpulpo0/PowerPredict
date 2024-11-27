@@ -21,7 +21,7 @@ body{
 
 /*cellules table style*/
 .st-df td {
-    background-color: : #ffffff;
+    background-color: #ffffff; /* Remove the extra colon */
     color: #333333;
     padding: 10px;
     border: 1px solid #ddd;
