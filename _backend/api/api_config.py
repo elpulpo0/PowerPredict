@@ -1,3 +1,6 @@
+from pydantic import BaseModel
+from typing import Optional
+
 VALID_COLUMNS_DATA = [
     "annee_consommation",
     "zone_climatique",
@@ -134,3 +137,16 @@ initialisation_FastAPI = {
         },
     ],
 }
+
+# Class pydantic
+
+class PredictionData(BaseModel):
+    surface_declaree: float
+    nombre_declaration: int
+    annee_consommation: Optional[str] = None
+    zone_climatique: Optional[str] = None
+    vecteur_energie: Optional[str] = None
+    consommation_declaree: Optional[float] = None
+    nom_commune: Optional[str] = None
+    nom_departement: Optional[str] = None
+    nom_region: Optional[str] = None
