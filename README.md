@@ -23,5 +23,12 @@ pip install -r requirements.txt
 
 ## Désactiver l'environnement virtuel
 
-deactivate
+`deactivate`
+
+## Lancer le backend
+
+```bash
+cd _backend
+uvicorn App:app --reload
+```
 
