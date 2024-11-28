@@ -1,5 +1,6 @@
 import streamlit as st
 from fonctions import fetch_table_names, fetch_table_data, paginate_data 
+import pandas as pd
 
 # Config esthétique de la page
 st.set_page_config(
@@ -21,6 +22,19 @@ st.markdown(
 # Titres et descriptions
 st.title("📊 PowerPredict")
 st.write("PowerPredict est un outil de visualisation de données de consommation d'énergie")
+
+#bouton date input
+year_selected = st.sidebar.date_input(
+    "Sélectionner l'année",
+    value=pd.to_datetime('2023-01-01'),
+    min_value=pd.to_datetime('2020-01-01'),
+    max_value=pd.to_datetime('2024-01-01'),
+    ).year
+
+
+
+st.write('Année sélectionnée:{year_selected}')
+
 
 loading_html = """
 <div style="text-align: center;">
