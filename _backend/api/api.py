@@ -6,10 +6,6 @@ import joblib
 from loguru import logger
 from .api_config import responses_data, responses_health, PredictionData
 
-# Charger les modèles sauvegardés
-rf_model = joblib.load("database/random_forest_model.pkl")
-# gb_model = joblib.load("database/gradient_boosting_model.pkl")
-
 router = APIRouter()
 
 @router.get(
@@ -95,49 +91,49 @@ async def home():
 #         raise HTTPException(status_code=500, detail="Erreur serveur lors de la prédiction.")
 
 
-from pydantic import BaseModel
-import pandas as pd
+# from pydantic import BaseModel
+# import pandas as pd
 
-# Charger le modèle
-rf_model = joblib.load("database/random_forest_model.pkl")
+# # Charger le modèle
+# rf_model = joblib.load("database/random_forest_model.pkl")
 
-# Données d'entrée
-class PredictionData(BaseModel):
-    surface_declaree: float
-    nombre_declaration: int
-    annee_consommation: int
-    zone_climatique: str
-    vecteur_energie: str
+# # Données d'entrée
+# class PredictionData(BaseModel):
+#     surface_declaree: float
+#     nombre_declaration: int
+#     annee_consommation: int
+#     zone_climatique: str
+#     vecteur_energie: str
 
-# Fonction pour sélectionner les features
-def select_features(data, selected_features):
-    """
-    Sélectionne un sous-ensemble de features dans les données.
-    """
-    # Créer une liste contenant les valeurs des features, et non pas une liste de listes.
-    # Le tableau doit être de forme (1, N) où N est le nombre de features sélectionnées
-    return pd.DataFrame([list(data[feature] for feature in selected_features)], columns=selected_features)
+# # Fonction pour sélectionner les features
+# def select_features(data, selected_features):
+#     """
+#     Sélectionne un sous-ensemble de features dans les données.
+#     """
+#     # Créer une liste contenant les valeurs des features, et non pas une liste de listes.
+#     # Le tableau doit être de forme (1, N) où N est le nombre de features sélectionnées
+#     return pd.DataFrame([list(data[feature] for feature in selected_features)], columns=selected_features)
 
-# Route de prédiction
-@router.post("/predict/")
-async def predict(data: PredictionData):
-    try:
-        # Liste des features à sélectionner pour la prédiction
-        selected_features = ['surface_declaree', 'nombre_declaration', 'zone_climatique', 'vecteur_energie']
+# # Route de prédiction
+# @router.post("/predict/")
+# async def predict(data: PredictionData):
+#     try:
+#         # Liste des features à sélectionner pour la prédiction
+#         selected_features = ['surface_declaree', 'nombre_declaration', 'zone_climatique', 'vecteur_energie']
 
-        # Convertir les données en un dictionnaire et sélectionner les features
-        input_data = select_features(data.dict(), selected_features)
+#         # Convertir les données en un dictionnaire et sélectionner les features
+#         input_data = select_features(data.dict(), selected_features)
 
-        # Faire la prédiction
-        prediction = rf_model.predict(input_data)
+#         # Faire la prédiction
+#         prediction = rf_model.predict(input_data)
 
-        # Retourner la prédiction
-        return {"Prediction": prediction[0]}
+#         # Retourner la prédiction
+#         return {"Prediction": prediction[0]}
 
-    except Exception as e:
-        # Loguer l'erreur avec Loguru
-        logger.error(f"Erreur lors de la prédiction : {e}")
+#     except Exception as e:
+#         # Loguer l'erreur avec Loguru
+#         logger.error(f"Erreur lors de la prédiction : {e}")
         
-        # Retourner l'erreur à l'utilisateur avec le détail
-        raise HTTPException(status_code=500, detail=f"Erreur lors de la prédiction : {e}")
+#         # Retourner l'erreur à l'utilisateur avec le détail
+#         raise HTTPException(status_code=500, detail=f"Erreur lors de la prédiction : {e}")
 
