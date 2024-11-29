@@ -3,10 +3,18 @@ import sys
 
 def configure_logging():
     """
-    Configure Loguru avec un format, descouleurs et un niveau de log uniformes pour l'ensemble de l'application.
+    Configure Loguru avec des couleurs spécifiques pour chaque niveau de log
+    et un fichier pour enregistrer les logs.
     """
-    # Supprimer le gestionnaire par défaut
     logger.remove()
 
-    # Ajouter un gestionnaire pour la console
-    logger.add(sys.stderr, level="INFO", format="{time:YYYY-MM-DD HH:mm:ss} | <green>{level}</green> | <cyan>{message}</cyan>")
+    logger.add(sys.stderr, 
+               level="DEBUG",
+               format="{time:YYYY-MM-DD HH:mm:ss} | <green>{level}</green> | <cyan>{message}</cyan>")
+
+    # Ajouter un gestionnaire pour les logs dans un fichier
+    logger.add("app.log", 
+               level="DEBUG",
+               format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}",
+               rotation="1 week",
+               compression="zip")
