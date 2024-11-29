@@ -32,3 +32,12 @@ cd _backend
 uvicorn App:app --reload
 ```
 
+## Lancer les tests
+
+exemple pour test_energy_consumption.py :
+
+```bash
+cd /path/to/PowerPredict
+pytest tests/test_energy_consumption.py
+```
+
