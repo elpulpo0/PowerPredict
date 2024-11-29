@@ -3,5 +3,4 @@ __pycache__
 __init__.py
 .DS_Store
 
-start.bash
 _backend/api/api copy.py

@@ -25,19 +25,21 @@ pip install -r requirements.txt
 
 `deactivate`
 
-## Lancer le backend
+## Lancer le backend et le frontend en //
 
 ```bash
-cd _backend
-uvicorn App:app --reload
+bash start.bash
 ```
 
 ## Lancer les tests
 
-exemple pour test_energy_consumption.py :
+```bash
+pytest
+```
+
+Exemple pour lancer uniquement test_energy_consumption.py :
 
 ```bash
-cd /path/to/PowerPredict
-pytest tests/test_energy_consumption.py
+pytest _backend/tests/test_energy_consumption.py
 ```
 
