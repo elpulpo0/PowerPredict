@@ -32,3 +32,9 @@ cd _backend
 uvicorn App:app --reload
 ```
 
+## Lancer le front
+
+```bash
+streamlit run _frontend/main.py
+```
+
