@@ -1,9 +1,10 @@
 import streamlit as st
-from fonctions import fetch_table_names, fetch_table_data, paginate_data 
 import pandas as pd
 import plotly.express as px
+import requests
+import sqlite3
+from fonctions import fetch_table_names, fetch_table_data, paginate_data 
 
-# Configuration esthétique de la page
 st.set_page_config(
     page_title="PowerPredict",
     page_icon="📊",
@@ -32,46 +33,91 @@ loading_html = """
 """
 loading_placeholder = st.markdown(loading_html, unsafe_allow_html=True)
 
-# Initialiser selected_table et year_selected
+# Initialiser selected_table
 selected_table = None
-year_selected = None  # Initialiser year_selected à None
 
 # Récupérer tous les noms de tables depuis la base de données
-table_names = fetch_table_names(f"{API_URL}/tables")
+try:
+    response = requests.get(f"{API_URL}/data")
+    response.raise_for_status()
+    table_names = response.json().get('tables', []) if 'tables' in response.json() else []
+except Exception as e:
+    st.error(f"🚨 Une erreur est survenue lors de la connexion à l'API : {e}")
+    table_names = []
 
 if table_names:
     selected_table = st.sidebar.selectbox("Sélectionner une table", table_names)
 
 # Vérifier si selected_table est défini avant de l'utiliser
 if selected_table:
-    table_data = fetch_table_data(f"{API_URL}/data", selected_table)
+    try:
+        # Définir les filtres pour l'année de consommation et d'autres paramètres
+        filters = {
+            "annee_consommation": st.sidebar.selectbox("Année de consommation", ["2020", "2021", "2022", "2023", "Année de référence"]),
+            "region": st.sidebar.text_input("Région"),
+            "departement": st.sidebar.text_input("Département"),
+            "vecteur_energie": st.sidebar.text_input("Vecteur d'énergie"),
+            "surface_declaree": st.sidebar.number_input("Surface déclarée", min_value=0.0, step=0.1),
+            "nombre_declaration": st.sidebar.number_input("Nombre de déclarations", min_value=0, step=1),
+            "zone_climatique": st.sidebar.text_input("Zone climatique"),
+            "commune": st.sidebar.text_input("Commune"),
+        }
+
+        # Construire les paramètres de requête dynamiquement en omettant les valeurs vides
+        params = {key: value for key, value in filters.items() if value and value != "Toutes" and value != "Tous" and value != "Année de référence"}
+
+        # Passer les paramètres valides uniquement
+        response = requests.get(f"{API_URL}/data", params=params)
+        response.raise_for_status()
+        table_data = pd.DataFrame(response.json())
+    except requests.exceptions.HTTPError as http_err:
+        st.error(f"🚨 Une erreur HTTP est survenue : {http_err}")
+        st.write(f"URL: {response.url}")
+        st.write(f"Response Content: {response.text}")
+        table_data = pd.DataFrame()
+    except Exception as e:
+        st.error(f"🚨 Une erreur est survenue lors de la connexion à l'API : {e}")
+        table_data = pd.DataFrame()
 
     if not table_data.empty:
         # Supprimer l'animation de chargement une fois les données récupérées
         loading_placeholder.empty()
 
-        # Créer un widget de saisie de date pour sélectionner l'année
-        year_selected = st.sidebar.date_input(
-            "Sélectionner l'année",
-            value=pd.to_datetime('2023-01-01'),
-            min_value=pd.to_datetime('2020-01-01'),
-            max_value=pd.to_datetime('2024-01-01'),
-        ).year
-        
-        # Utiliser year_selected en toute sécurité
-        st.write(f'Année sélectionnée: {year_selected}')
+        # Extraire les valeurs uniques pour les colonnes pertinentes
+        regions = table_data['region'].unique() if 'region' in table_data.columns else []
+        departements = table_data['departement'].unique() if 'departement' in table_data.columns else []
+        vecteurs_energie = table_data['vecteur_energie'].unique() if 'vecteur_energie' in table_data.columns else []
+
+        # Créer des menus déroulants basés sur les données de l'API
+        selected_region = st.sidebar.selectbox("Sélectionner une région", ["Toutes"] + list(regions))
+        selected_departement = st.sidebar.selectbox("Sélectionner un département", ["Tous"] + list(departements))
+        selected_vecteur_energie = st.sidebar.selectbox("Sélectionner un vecteur d'énergie", ["Tous"] + list(vecteurs_energie))
+
+        # Appliquer les filtres sur les données
+        filtered_data = table_data.copy()
+        if selected_region != "Toutes":
+            filtered_data = filtered_data[filtered_data['region'] == selected_region]
+        if selected_departement != "Tous":
+            filtered_data = filtered_data[filtered_data['departement'] == selected_departement]
+        if selected_vecteur_energie != "Tous":
+            filtered_data = filtered_data[filtered_data['vecteur_energie'] == selected_vecteur_energie]
 
         # Vérifier si 'year' est une colonne dans les données
-        if 'year' in table_data.columns:
+        if 'year' in filtered_data.columns:
             # Diagramme linéaire des tendances de consommation d'énergie par année
-            fig = px.line(table_data[table_data['year'] == year_selected], x='month', y='consumption', title=f'Tendances de consommation pour l\'année {year_selected}')
+            fig = px.line(
+                filtered_data[filtered_data['year'] == int(filters['annee_consommation'])] if filters['annee_consommation'] != 'Année de référence' else filtered_data,
+                x='month',
+                y='consumption',
+                title=f"Tendances de consommation pour l'année {filters['annee_consommation']}"
+            )
             st.plotly_chart(fig, use_container_width=True)
         else:
             st.warning("🚫 Pas de données disponibles pour l'année sélectionnée")
 
         # Créer un diagramme en barres pour la consommation totale par vecteurs d'énergie
-        if 'vecteur_energie' in table_data.columns and 'consumption' in table_data.columns:
-            total_consumption = table_data.groupby('vecteur_energie')['consumption'].sum().reset_index()
+        if 'vecteur_energie' in filtered_data.columns and 'consumption' in filtered_data.columns:
+            total_consumption = filtered_data.groupby('vecteur_energie')['consumption'].sum().reset_index()
             bar_fig = px.bar(total_consumption, x='vecteur_energie', y='consumption', title="Consommation totale par vecteur d'énergie")
             st.plotly_chart(bar_fig, use_container_width=True)
         else:
@@ -89,7 +135,7 @@ if selected_table and not table_data.empty:
     )
 
     # Appeler paginate_data uniquement si table_data contient des lignes
-    paginated_data = paginate_data(table_data, page_size)
+    paginated_data = paginate_data(filtered_data, page_size)
     st.dataframe(paginated_data, use_container_width=True)
 else:
     st.warning("🚫 Pas de données à afficher pour la table sélectionnée.")
