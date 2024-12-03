@@ -119,7 +119,7 @@ pytest _backend/tests/test_energy_consumption.py
 
 ---
 
-# Structure du projet PowerPredict
+## Structure du projet
 
 | Arborescence       | Description                                         |
 |--------------------|-----------------------------------------------------|
