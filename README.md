@@ -59,16 +59,16 @@ GET https://powerpredict.onrender.com/data?region=guadeloupe&zone_climatique=GUA
 
 ### Créer un environement virtuel
 
-```python -m venv __venv```
+```python -m venv .venv```
 
 ### Activer l'environement virtuel
 
 - mac/linux:
-`source __venv/bin/activate.fish`
+`source .venv/bin/activate.fish`
 - windows:
-`__venv/Scripts/activate` or `__venv/Scripts/activate.ps1` 
+`.venv/Scripts/activate` or `.venv/Scripts/activate.ps1` 
 - bash(windows):
-`source __venv/Scripts/activate`
+`source .venv/Scripts/activate`
 
 ### Installer les dépendances
 
