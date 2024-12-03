@@ -107,11 +107,54 @@ responses_home={
         },
     }
 
-responses_test_train={
-        200: {"description": "Données encodées récupérées avec succès."},
-        404: {"description": "Aucune donnée trouvée."},
-        500: {"description": "Erreur serveur."},
-    }
+responses_predict = {
+    200: {
+        "description": "Prédiction réalisée avec succès.",
+        "content": {
+            "application/json": {
+                "example": {
+                    "Modèle utilisé": "LinearRegression",
+                    "Prédiction (kWh)": "1234.56"
+                }
+            }
+        },
+    },
+    400: {
+        "description": "Requête invalide. Les données fournies ne sont pas correctes.",
+        "content": {
+            "application/json": {
+                "example": {"detail": "Localisation invalide."}
+            }
+        },
+    },
+    422: {
+        "description": "Unprocessable Entity - La requête ne peut être traitée.",
+        "content": {
+            "application/json": {
+                "example": {
+                    "detail": [
+                        {
+                            "type": "value_error",
+                            "loc": ["body", "surface_declaree"],
+                            "msg": "Value must be greater than zero",
+                            "input": -10.5
+                        }
+                    ]
+                }
+            }
+        },
+    },
+    500: {
+        "description": "Erreur serveur interne.",
+        "content": {
+            "application/json": {
+                "example": {"detail": "Erreur serveur. Une erreur est survenue lors de la prédiction."}
+            }
+        },
+    },
+}
+
+
 
 # Arguments FastAPI
 
