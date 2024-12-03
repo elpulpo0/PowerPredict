@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Depends
-from _backend.api.database import db
+from .database import db
 from .filters import APIFilters
 from loguru import logger
 from .api_config import responses_data, responses_health

@@ -24,3 +24,5 @@
 2024-11-29 15:56:15 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'nombre_declaration': 4, 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
 2024-11-29 15:56:22 | WARNING | Aucune ligne retournée pour cette requête.
 2024-11-29 15:56:22 | WARNING | Aucune donnée trouvée pour les critères fournis.
+2024-12-03 14:29:01 | INFO | Vérification de l'état de santé de l'API.
+2024-12-03 14:29:13 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'zone_climatique': 'gua'}
