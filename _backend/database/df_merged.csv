@@ -1,0 +1,900 @@
+annee_consommation,zone_climatique,nom_region,nom_departement,nom_commune,nombre_declaration,surface_declaree,consommation_declaree,vecteur_energie
+Année de référence,GUA,Guadeloupe,Guadeloupe,BAIE MAHAULT,86,205643,38442621,Electricite
+Année de référence,GUA,Guadeloupe,Guadeloupe,BAILLIF,7,8815,1287317,Electricite
+Année de référence,GUA,Guadeloupe,Guadeloupe,BASSE TERRE,4,4024,699468,Electricite
+Année de référence,GUA,Guadeloupe,Guadeloupe,LES ABYMES,34,88040,20281219,Electricite
+Année de référence,GUA,Guadeloupe,Guadeloupe,PETIT BOURG,13,14890,1302881,Electricite
+Année de référence,GUA,Guadeloupe,Guadeloupe,POINTE A PITRE,4,2682,702277,Electricite
+Année de référence,GUA,Guadeloupe,Guadeloupe,SAINT FRANCOIS,6,8982,2701468,Electricite
+Année de référence,GUY,Guyane,Guyane,CAYENNE,28,60641,7489990,Electricite
+Année de référence,GUY,Guyane,Guyane,KOUROU,5,9575,2381032,Electricite
+Année de référence,GUY,Guyane,Guyane,MATOURY,11,15303,2417127,Electricite
+Année de référence,GUY,Guyane,Guyane,REMIRE MONTJOLY,10,22076,8409763,Electricite
+Année de référence,H1a,Île-de-France,Seine-et-Marne,LIZY SUR OURCQ,3,6837,1980161,Inconnu
+Année de référence,H1a,Île-de-France,Seine-et-Marne,MAUREGARD,7,3391,218404,Electricite
+Année de référence,H1a,Île-de-France,Seine-et-Marne,VILLENOY,3,2372,244282,Inconnu
+Année de référence,H1a,Île-de-France,Yvelines,BOIS D ARCY,4,23602,3819060,Inconnu
+Année de référence,H1a,Île-de-France,Yvelines,FOLLAINVILLE DENNEMONT,3,1817,251502,Inconnu
+Année de référence,H1a,Île-de-France,Essonne,BIEVRES,5,5558,691223,Electricite
+Année de référence,H1a,Île-de-France,Essonne,CHAMARANDE,3,3913,1586548,Inconnu
+Année de référence,H1a,Île-de-France,Essonne,SAINT AUBIN,17,16145,2423327,Electricite
+Année de référence,H1a,Île-de-France,Essonne,SAINT JEAN DE BEAUREGARD,3,482,132809,Electricite
+Année de référence,H1a,Île-de-France,Essonne,VERT LE GRAND,3,8636,2977877,Inconnu
+Année de référence,H1a,Île-de-France,Val-de-Marne,PARIS,3,32746,5453404,Inconnu
+Année de référence,H1a,Île-de-France,Val-d'Oise,BONNEUIL EN FRANCE,4,29787,1907571,Electricite
+Année de référence,H1a,Normandie,Calvados,MOULT CHICHEBOVILLE,3,6552,2353434,Inconnu
+Année de référence,H1a,Normandie,Calvados,SAINT MARTIN DES ENTREES,3,14037,3176533,Electricite
+Année de référence,H1a,Normandie,Eure,MENNEVAL,5,3494,514415,Electricite
+Année de référence,H1a,Normandie,Eure,NORMANVILLE,4,6665,711183,Electricite
+Année de référence,H1a,Normandie,Orne,GACE,3,8060,972738,Inconnu
+Année de référence,H1a,Normandie,Orne,RIVES D ANDAINE,4,9404,3077707,Inconnu
+Année de référence,H1a,Normandie,Seine-Maritime,LES GRANDES VENTES,5,19087,6730235,Inconnu
+Année de référence,H1a,Normandie,Seine-Maritime,PISSY POVILLE,5,5784,814369,Electricite
+Année de référence,H1a,Normandie,Seine-Maritime,ROUXMESNIL BOUTEILLES,3,5928,998741,Inconnu
+Année de référence,H1a,Normandie,Seine-Maritime,SAINT SAENS,3,11914,4517209,Inconnu
+Année de référence,H1a,Hauts-de-France,Oise,LACROIX SAINT OUEN,3,10711,633978,Inconnu
+Année de référence,H1a,Hauts-de-France,Oise,MILLY SUR THERAIN,3,975,458521,Electricite
+Année de référence,H1a,Hauts-de-France,Pas-de-Calais,ATHIES,4,17640,7843664,Inconnu
+Année de référence,H1a,Hauts-de-France,Pas-de-Calais,DUISANS,3,5450,319134,Electricite
+Année de référence,H1a,Hauts-de-France,Pas-de-Calais,FRESNES LES MONTAUBAN,6,1485,142890,Electricite
+Année de référence,H1a,Hauts-de-France,Pas-de-Calais,MARCONNELLE,3,6869,2193130,Inconnu
+Année de référence,H1a,Hauts-de-France,Pas-de-Calais,WIMILLE,3,16245,3814302,Inconnu
+Année de référence,H1a,Grand-Est,Marne,BETHENY,4,22741,1142718,Electricite
+Année de référence,H1a,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,12,9224,598399,Electricite
+Année de référence,H1a,Bretagne,Morbihan,CARENTOIR,4,18588,6229489,Electricite
+Année de référence,H1a,Occitanie,Haute-Garonne,TOULOUSE,3,2012,236828,Electricite
+Année de référence,H1a,Auvergne-Rhône-Alpes,Rhône,CALUIRE ET CUIRE,3,5372,538458,Inconnu
+Année de référence,H1b,Île-de-France,Hauts-de-Seine,PUTEAUX,26,358841,8493116,Electricite
+Année de référence,H1b,Bourgogne-Franche-Comté,Haute-Saône,SAINT LOUP SUR SEMOUSE,3,44940,1736349,Inconnu
+Année de référence,H1b,Grand-Est,Ardennes,SAULT LES RETHEL,3,11169,2906235,Inconnu
+Année de référence,H1b,Grand-Est,Marne,AY CHAMPAGNE,3,20349,3611399,Inconnu
+Année de référence,H1b,Grand-Est,Meurthe-et-Moselle,CONFLANS EN JARNISY,4,4290,510425,Electricite
+Année de référence,H1b,Grand-Est,Moselle,LA MAXE,3,8226,1023879,Electricite
+Année de référence,H1b,Grand-Est,Moselle,OGY MONTOY FLANVILLE,3,8581,1856811,Inconnu
+Année de référence,H1b,Grand-Est,Moselle,REDING,3,3029,250442,Electricite
+Année de référence,H1b,Grand-Est,Bas-Rhin,DUPPIGHEIM,3,10676,3137290,Electricite
+Année de référence,H1b,Grand-Est,Bas-Rhin,NIEDERHAUSBERGEN,3,2065,94462,Electricite
+Année de référence,H1b,Grand-Est,Bas-Rhin,ROPPENHEIM,29,8025,1752917,Electricite
+Année de référence,H1b,Grand-Est,Haut-Rhin,AMMERSCHWIHR,3,4664,571475,Gaz
+Année de référence,H1c,Île-de-France,Hauts-de-Seine,PUTEAUX,12,143008,3919295,Electricite
+Année de référence,H1c,Bourgogne-Franche-Comté,Côte-dOr,PERRIGNY LES DIJON,6,31477,8944867,Inconnu
+Année de référence,H1c,Bourgogne-Franche-Comté,Doubs,GENEUILLE,3,7732,1442655,Inconnu
+Année de référence,H1c,Bourgogne-Franche-Comté,Saône-et-Loire,DRACY LE FORT,4,14296,918137,Electricite
+Année de référence,H1c,Bourgogne-Franche-Comté,Saône-et-Loire,FARGES LES CHALON,3,5688,1089758,Inconnu
+Année de référence,H1c,Bretagne,Côtes-d'Armor,SAINT BRIEUC,4,21188,815779,Electricite
+Année de référence,H1c,Nouvelle-Aquitaine,Creuse,EVAUX LES BAINS,3,13072,1178850,Electricite
+Année de référence,H1c,Nouvelle-Aquitaine,Dordogne,TERRASSON LAVILLEDIEU,3,2802,701301,Inconnu
+Année de référence,H1c,Nouvelle-Aquitaine,Gironde,LORMONT,3,8308,177951,Electricite
+Année de référence,H1c,Nouvelle-Aquitaine,Haute-Vienne,NANTIAT,3,4805,554038,Inconnu
+Année de référence,H1c,Nouvelle-Aquitaine,Haute-Vienne,SAINT SULPICE LES FEUILLES,3,910,169829,Fioul
+Année de référence,H1c,Auvergne-Rhône-Alpes,Cantal,ANDELAT,4,5358,628450,Electricite
+Année de référence,H1c,Auvergne-Rhône-Alpes,Isère,CREMIEU,3,6573,2089589,Inconnu
+Année de référence,H1c,Auvergne-Rhône-Alpes,Isère,SUSVILLE,3,7058,1701767,Inconnu
+Année de référence,H1c,Auvergne-Rhône-Alpes,Puy-de-Dôme,LA BOURBOULE,3,5670,1668389,Inconnu
+Année de référence,H1c,Auvergne-Rhône-Alpes,Rhône,MONTAGNY,9,13365,3401591,Electricite
+Année de référence,H1c,Auvergne-Rhône-Alpes,Savoie,DULLIN,5,2710,204105,Electricite
+Année de référence,H1c,Auvergne-Rhône-Alpes,Savoie,NOVALAISE,3,5893,2428172,Inconnu
+Année de référence,H1c,Auvergne-Rhône-Alpes,Savoie,TOURS EN SAVOIE,3,2794,807544,Electricite
+Année de référence,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,BONNE,3,9948,2464863,Inconnu
+Année de référence,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,DOMANCY,3,4643,910957,Electricite
+Année de référence,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,SAINT CERGUES,3,5149,349794,Electricite
+Année de référence,H1c,Provence-Alpes-Côte d'Azur,Hautes-Alpes,LA SAULCE,3,5819,428399,Electricite
+Année de référence,H1c,Provence-Alpes-Côte d'Azur,Hautes-Alpes,VEYNES,3,5601,2000855,Inconnu
+Année de référence,H1c,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,MARSEILLE 03,3,553,40546,Electricite
+Année de référence,H2a,Normandie,Manche,BARNEVILLE CARTERET,5,9031,1688029,Electricite
+Année de référence,H2a,Normandie,Manche,FERMANVILLE,4,1119,76015,Electricite
+Année de référence,H2a,Normandie,Manche,QUETTREVILLE SUR SIENNE,4,1891,104628,Inconnu
+Année de référence,H2a,Normandie,Manche,TOLLEVAST,6,15805,1651616,Electricite
+Année de référence,H2a,Normandie,Manche,TREAUVILLE,4,1165,127157,Electricite
+Année de référence,H2a,Normandie,Manche,YQUELON,3,7071,407966,Electricite
+Année de référence,H2a,Bretagne,Côtes-d'Armor,PLESTAN,5,21413,3738700,Electricite
+Année de référence,H2a,Bretagne,Finistère,CLEDER,3,14352,2764458,Electricite
+Année de référence,H2a,Bretagne,Finistère,LANRIVOARE,3,5375,194203,Electricite
+Année de référence,H2a,Bretagne,Finistère,PLUGUFFAN,6,9654,688746,Electricite
+Année de référence,H2a,Bretagne,Finistère,SAINT EVARZEC,5,15763,590324,Electricite
+Année de référence,H2b,Île-de-France,Paris,PARIS 08,3,2696,1579273,Inconnu
+Année de référence,H2b,Île-de-France,Hauts-de-Seine,PUTEAUX,12,130929,2828800,Electricite
+Année de référence,H2b,Centre-Val de Loire,Cher,LE SUBDRAY,3,7625,1302224,Electricite
+Année de référence,H2b,Centre-Val de Loire,Cher,SANCERRE,3,10812,3006114,Inconnu
+Année de référence,H2b,Centre-Val de Loire,Indre-et-Loire,YZEURES SUR CREUSE,3,5302,226166,Electricite
+Année de référence,H2b,Pays de la Loire,Loire-Atlantique,LEGE,7,11624,576363,Electricite
+Année de référence,H2b,Pays de la Loire,Loire-Atlantique,MOUZEIL,6,4086,263430,Electricite
+Année de référence,H2b,Pays de la Loire,Mayenne,GORRON,3,4997,679219,Electricite
+Année de référence,H2b,Pays de la Loire,Sarthe,ECOMMOY,3,25633,4366623,Inconnu
+Année de référence,H2b,Pays de la Loire,Sarthe,SAINTE JAMME SUR SARTHE,5,19246,3665931,Inconnu
+Année de référence,H2b,Pays de la Loire,Sarthe,TRANGE,5,9693,782703,Electricite
+Année de référence,H2b,Pays de la Loire,Vendée,COMMEQUIERS,3,4436,604843,Electricite
+Année de référence,H2b,Pays de la Loire,Vendée,FALLERON,6,3409,106024,Electricite
+Année de référence,H2b,Pays de la Loire,Vendée,GRAND LANDES,7,1832,189696,Electricite
+Année de référence,H2b,Pays de la Loire,Vendée,L ILE D YEU,4,10407,1329391,Electricite
+Année de référence,H2b,Pays de la Loire,Vendée,LA GENETOUZE,5,3878,222143,Electricite
+Année de référence,H2b,Pays de la Loire,Vendée,SAINT PROUANT,4,13635,3485232,Inconnu
+Année de référence,H2b,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,6,1883,99395,Electricite
+Année de référence,H2b,Nouvelle-Aquitaine,Charente-Maritime,MARSILLY,3,2603,679261,Inconnu
+Année de référence,H2b,Nouvelle-Aquitaine,Charente-Maritime,SAINTE SOULLE,3,14975,1714011,Electricite
+Année de référence,H2b,Nouvelle-Aquitaine,Deux-Sèvres,FRESSINES,5,2660,244640,Electricite
+Année de référence,H2b,Nouvelle-Aquitaine,Deux-Sèvres,SAUZE VAUSSAIS,4,11292,2230129,Inconnu
+Année de référence,H2b,Nouvelle-Aquitaine,Vienne,BONNEUIL MATOURS,3,1718,169074,Electricite
+Année de référence,H2c,Île-de-France,Hauts-de-Seine,PUTEAUX,41,547816,14367910,Electricite
+Année de référence,H2c,Nouvelle-Aquitaine,Dordogne,LE LARDIN SAINT LAZARE,3,4043,576150,Inconnu
+Année de référence,H2c,Nouvelle-Aquitaine,Gironde,CABANAC ET VILLAGRAINS,3,1156,56195,Electricite
+Année de référence,H2c,Nouvelle-Aquitaine,Gironde,LES ARTIGUES DE LUSSAC,7,2781,43633,Electricite
+Année de référence,H2c,Nouvelle-Aquitaine,Gironde,PUGNAC,3,5995,691588,Electricite
+Année de référence,H2c,Nouvelle-Aquitaine,Gironde,SAINT BRICE,3,7800,502874,Electricite
+Année de référence,H2c,Nouvelle-Aquitaine,Landes,MOLIETS ET MAA,3,9107,686626,Electricite
+Année de référence,H2c,Nouvelle-Aquitaine,Landes,PISSOS,3,2610,269144,Electricite
+Année de référence,H2c,Nouvelle-Aquitaine,Lot-et-Garonne,SAINT VITE,3,8567,322388,Inconnu
+Année de référence,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,LAHONCE,6,4194,418192,Electricite
+Année de référence,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,PARDIES,3,3854,126893,Electricite
+Année de référence,H2c,Occitanie,Ariège,VERNIOLLE,3,13085,1909128,Electricite
+Année de référence,H2c,Occitanie,Haute-Garonne,AUZIELLE,5,2016,224430,Electricite
+Année de référence,H2c,Occitanie,Haute-Garonne,MONTBRUN LAURAGAIS,4,1356,71550,Electricite
+Année de référence,H2c,Occitanie,Haute-Garonne,MONTGISCARD,4,11860,1856838,Electricite
+Année de référence,H2c,Occitanie,Lot,CAPDENAC,3,5916,674762,Electricite
+Année de référence,H2c,Occitanie,Hautes-Pyrénées,BARBAZAN DEBAT,5,7060,357635,Electricite
+Année de référence,H2c,Occitanie,Tarn,SOUAL,5,16206,2788528,Electricite
+Année de référence,H2d,Auvergne-Rhône-Alpes,Drôme,MIRABEL ET BLACONS,9,2510,239299,Electricite
+Année de référence,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,CHATEAUNEUF DE GADAGNE,3,20315,786353,Electricite
+Année de référence,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,LE THOR,4,17088,514055,Electricite
+Année de référence,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,MORNAS,4,5419,2826166,Electricite
+Année de référence,H3,Île-de-France,Hauts-de-Seine,PUTEAUX,43,597760,14385370,Electricite
+Année de référence,H3,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,3,497,29498,Electricite
+Année de référence,H3,Bretagne,Ille-et-Vilaine,PACE,6,1221,237634,Electricite
+Année de référence,H3,Occitanie,Gard,AIMARGUES,4,21129,3780058,Electricite
+Année de référence,H3,Occitanie,Gard,LAUDUN L ARDOISE,3,4044,573783,Electricite
+Année de référence,H3,Occitanie,Gard,MEJANNES LE CLAP,4,7372,661676,Inconnu
+Année de référence,H3,Occitanie,Gard,MILHAUD,4,3562,757572,Electricite
+Année de référence,H3,Occitanie,Pyrénées-Orientales,ERR,3,8552,995567,Electricite
+Année de référence,H3,Occitanie,Pyrénées-Orientales,LAROQUE DES ALBERES,4,7230,1840622,Electricite
+Année de référence,H3,Occitanie,Pyrénées-Orientales,LOS MASOS,3,9862,1518088,Electricite
+Année de référence,H3,Occitanie,Pyrénées-Orientales,POLLESTRES,10,15557,1277389,Electricite
+Année de référence,H3,Occitanie,Pyrénées-Orientales,SOREDE,7,10681,838322,Electricite
+Année de référence,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,ROQUEVAIRE,5,10812,864226,Electricite
+Année de référence,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,SAINTES MARIES DE LA MER,4,5007,502977,Electricite
+Année de référence,H3,Provence-Alpes-Côte d'Azur,Var,COGOLIN,9,15648,2612071,Electricite
+Année de référence,H3,Provence-Alpes-Côte d'Azur,Var,LA CRAU,5,7050,917291,Electricite
+Année de référence,H3,Provence-Alpes-Côte d'Azur,Var,LE LAVANDOU,6,12182,2607622,Electricite
+Année de référence,H3,Provence-Alpes-Côte d'Azur,Var,RAYOL CANADEL SUR MER,4,5029,1111674,Electricite
+Année de référence,H3,Provence-Alpes-Côte d'Azur,Var,ROCBARON,3,2398,397773,Electricite
+Année de référence,H3,Provence-Alpes-Côte d'Azur,Var,SAINT TROPEZ,3,5261,1229354,Electricite
+Année de référence,H3,Provence-Alpes-Côte d'Azur,Var,VIDAUBAN,5,14086,862339,Electricite
+Année de référence,H3,Provence-Alpes-Côte d'Azur,Var,VINON SUR VERDON,3,4592,4424395,Inconnu
+Année de référence,H3,Corse,Corse-du-Sud,AFA,3,20523,4955717,Electricite
+Année de référence,H3,Corse,Corse-du-Sud,PORTO VECCHIO,16,34229,6955684,Electricite
+Année de référence,H3,Corse,Haute-Corse,CALVI,3,8597,2066449,Electricite
+Année de référence,H3,Corse,Haute-Corse,L ILE ROUSSE,3,3865,1281445,Electricite
+Année de référence,MAR,Martinique,Martinique,DUCOS,9,1121,248564,Electricite
+Année de référence,MAR,Martinique,Martinique,LE LAMENTIN,79,190949,36550315,Electricite
+Année de référence,MAR,Martinique,Martinique,LE MARIN,4,2294,421873,Electricite
+Année de référence,MAR,Martinique,Martinique,SCHOELCHER,10,40082,9399194,Electricite
+Année de référence,MAY,Mayotte,Mayotte,MAMOUDZOU,14,50096,7579862,Electricite
+Année de référence,MAY,Mayotte,Mayotte,PAMANDZI,3,11889,1349159,Electricite
+Année de référence,REU,La Réunion,La Réunion,BRAS PANON,5,7806,2467318,Electricite
+Année de référence,REU,La Réunion,La Réunion,LA POSSESSION,11,33944,5519095,Electricite
+Année de référence,REU,La Réunion,La Réunion,LE PORT,90,238912,39466532,Electricite
+Année de référence,REU,La Réunion,La Réunion,LES AVIRONS,5,12543,631464,Electricite
+Année de référence,REU,La Réunion,La Réunion,SAINT ANDRE,27,64116,3775982,Electricite
+Année de référence,REU,La Réunion,La Réunion,SAINT BENOIT,24,65593,9558553,Electricite
+Année de référence,REU,La Réunion,La Réunion,SAINT LEU,31,56068,8481059,Electricite
+2020,GUA,Guadeloupe,Guadeloupe,BAIE MAHAULT,104,236889,32033545,Electricite
+2020,GUA,Guadeloupe,Guadeloupe,BAILLIF,6,7746,1085220,Electricite
+2020,GUA,Guadeloupe,Guadeloupe,BASSE TERRE,5,11144,1091930,Electricite
+2020,GUA,Guadeloupe,Guadeloupe,GOURBEYRE,4,10573,565882,Electricite
+2020,GUA,Guadeloupe,Guadeloupe,LE GOSIER,7,2147,915859,Electricite
+2020,GUA,Guadeloupe,Guadeloupe,LES ABYMES,45,112606,19446356,Electricite
+2020,GUA,Guadeloupe,Guadeloupe,PETIT BOURG,13,14890,1007677,Electricite
+2020,GUA,Guadeloupe,Guadeloupe,POINTE A PITRE,4,4397,582961,Electricite
+2020,GUA,Guadeloupe,Guadeloupe,SAINT FRANCOIS,6,8982,2384582,Electricite
+2020,GUY,Guyane,Guyane,CAYENNE,33,79025,7659470,Electricite
+2020,GUY,Guyane,Guyane,KOUROU,5,9575,1960631,Electricite
+2020,GUY,Guyane,Guyane,MATOURY,13,20831,2332755,Electricite
+2020,GUY,Guyane,Guyane,REMIRE MONTJOLY,13,16975,6112043,Electricite
+2020,H1a,Île-de-France,Seine-et-Marne,DAMMARTIN EN GOELE,4,30044,7144590,Inconnu
+2020,H1a,Île-de-France,Seine-et-Marne,MAUREGARD,7,3391,216165,Electricite
+2020,H1a,Île-de-France,Seine-et-Marne,SOUPPES SUR LOING,4,11695,2575169,Inconnu
+2020,H1a,Île-de-France,Essonne,BIEVRES,7,3579,360711,Electricite
+2020,H1a,Île-de-France,Essonne,CHAMARANDE,3,3913,1262449,Inconnu
+2020,H1a,Île-de-France,Essonne,SAINT AUBIN,19,17553,1939089,Electricite
+2020,H1a,Île-de-France,Essonne,SAINT JEAN DE BEAUREGARD,4,651,134283,Electricite
+2020,H1a,Île-de-France,Essonne,VERT LE GRAND,3,8627,3016983,Inconnu
+2020,H1a,Île-de-France,Val-d'Oise,BONNEUIL EN FRANCE,5,65536,4179636,Electricite
+2020,H1a,Île-de-France,Val-d'Oise,ECOUEN,3,26705,2068310,Inconnu
+2020,H1a,Île-de-France,Val-d'Oise,MONTSOULT,4,79165,21981162,Inconnu
+2020,H1a,Centre-Val de Loire,Eure-et-Loir,BREZOLLES,3,8315,546232,Inconnu
+2020,H1a,Normandie,Calvados,PERIERS EN AUGE,3,3548,238888,Electricite
+2020,H1a,Normandie,Calvados,SAINT MARTIN DES ENTREES,3,14037,2748202,Electricite
+2020,H1a,Normandie,Calvados,TREVIERES,3,3627,316124,Inconnu
+2020,H1a,Normandie,Eure,PONT DE L ARCHE,3,7132,789824,Inconnu
+2020,H1a,Normandie,Orne,BRIOUZE,3,4187,470527,Electricite
+2020,H1a,Normandie,Orne,MOULINS LA MARCHE,3,5936,316446,Electricite
+2020,H1a,Normandie,Orne,REMALARD EN PERCHE,3,6919,183421,Electricite
+2020,H1a,Normandie,Orne,RIVES D ANDAINE,4,9661,2547168,Inconnu
+2020,H1a,Normandie,Seine-Maritime,PISSY POVILLE,7,6293,613134,Electricite
+2020,H1a,Hauts-de-France,Aisne,SAINT ERME OUTRE ET RAMECOURT,4,12055,1510571,Inconnu
+2020,H1a,Hauts-de-France,Oise,LA CHAPELLE EN SERVAL,4,14116,2211646,Inconnu
+2020,H1a,Hauts-de-France,Oise,MILLY SUR THERAIN,4,1055,355730,Electricite
+2020,H1a,Hauts-de-France,Pas-de-Calais,DUISANS,9,15846,828563,Electricite
+2020,H1a,Hauts-de-France,Pas-de-Calais,FRESNES LES MONTAUBAN,8,4689,585496,Electricite
+2020,H1a,Hauts-de-France,Pas-de-Calais,LE WAST,3,3869,322800,Inconnu
+2020,H1a,Hauts-de-France,Pas-de-Calais,WIMILLE,3,16245,3293251,Inconnu
+2020,H1a,Hauts-de-France,Somme,CAGNY,3,3033,626574,Inconnu
+2020,H1a,Hauts-de-France,Somme,SAINT QUENTIN LA MOTTE CROIX BAILLY,3,11396,1643930,Electricite
+2020,H1a,Grand-Est,Marne,BETHENY,4,22741,1074677,Electricite
+2020,H1a,Bretagne,Morbihan,CARENTOIR,4,18588,6379035,Electricite
+2020,H1a,Occitanie,Haute-Garonne,TOULOUSE,4,2112,181828,Electricite
+2020,H1a,Auvergne-Rhône-Alpes,Rhône,LYON 03,4,11035,887641,Electricite
+2020,H1b,Centre-Val de Loire,Loiret,SAINT PERE SUR LOIRE,3,14541,3196270,Inconnu
+2020,H1b,Bourgogne-Franche-Comté,Haute-Saône,JUSSEY,3,7462,1661168,Electricite
+2020,H1b,Bourgogne-Franche-Comté,Yonne,BLENEAU,3,5801,1377362,Inconnu
+2020,H1b,Grand-Est,Marne,CERNAY LES REIMS,3,10064,1083791,Electricite
+2020,H1b,Grand-Est,Meurthe-et-Moselle,CONFLANS EN JARNISY,5,6764,841251,Electricite
+2020,H1b,Grand-Est,Moselle,REDING,3,3519,226063,Electricite
+2020,H1b,Grand-Est,Bas-Rhin,HUTTENHEIM,3,7190,908875,Inconnu
+2020,H1b,Grand-Est,Bas-Rhin,KILSTETT,6,583,76835,Electricite
+2020,H1b,Grand-Est,Bas-Rhin,LAMPERTHEIM,5,6809,1284240,Electricite
+2020,H1b,Grand-Est,Bas-Rhin,NIEDERHAUSBERGEN,4,2160,82290,Electricite
+2020,H1b,Grand-Est,Bas-Rhin,OTTERSWILLER,3,1874,123809,Electricite
+2020,H1b,Grand-Est,Bas-Rhin,ROPPENHEIM,97,43353,4625494,Electricite
+2020,H1b,Occitanie,Tarn,CASTRES,3,4154,763135,Electricite
+2020,H1c,Île-de-France,Paris,PARIS 15,3,1581,77664,Electricite
+2020,H1c,Île-de-France,Hauts-de-Seine,PUTEAUX,15,152526,2478409,Electricite
+2020,H1c,Bourgogne-Franche-Comté,Côte-dOr,EPOISSES,3,2952,384740,Inconnu
+2020,H1c,Bourgogne-Franche-Comté,Côte-dOr,FIXIN,3,8605,662477,Inconnu
+2020,H1c,Bourgogne-Franche-Comté,Côte-dOr,NEUILLY CRIMOLOIS,3,5661,930095,Inconnu
+2020,H1c,Bourgogne-Franche-Comté,Côte-dOr,PERRIGNY LES DIJON,7,31557,7333305,Inconnu
+2020,H1c,Bourgogne-Franche-Comté,Doubs,GENEUILLE,3,7732,1192124,Inconnu
+2020,H1c,Bourgogne-Franche-Comté,Doubs,HOUTAUD,5,4124,471867,Inconnu
+2020,H1c,Bourgogne-Franche-Comté,Saône-et-Loire,VINZELLES,3,3229,568335,Electricite
+2020,H1c,Bretagne,Côtes-d'Armor,SAINT BRIEUC,5,21494,600667,Electricite
+2020,H1c,Nouvelle-Aquitaine,Creuse,EVAUX LES BAINS,4,14484,1874304,Electricite
+2020,H1c,Nouvelle-Aquitaine,Dordogne,TERRASSON LAVILLEDIEU,3,2077,577348,Inconnu
+2020,H1c,Nouvelle-Aquitaine,Gironde,LORMONT,3,8290,171129,Electricite
+2020,H1c,Auvergne-Rhône-Alpes,Ain,CHAZEY BONS,3,7512,1441679,Electricite
+2020,H1c,Auvergne-Rhône-Alpes,Ain,NEYRON,4,2599,157192,Electricite
+2020,H1c,Auvergne-Rhône-Alpes,Ain,SAINT ANDRE DE CORCY,9,13590,2109616,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Ain,VONNAS,3,9145,1616159,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Cantal,ANDELAT,7,8215,825774,Electricite
+2020,H1c,Auvergne-Rhône-Alpes,Loire,CHAVANAY,3,4508,836810,Electricite
+2020,H1c,Auvergne-Rhône-Alpes,Loire,UNIEUX,3,10177,1157770,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Haute-Loire,COHADE,3,7117,1206010,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Puy-de-Dôme,PUY GUILLAUME,3,6910,1798685,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Rhône,SOUZY,3,8550,2537652,Electricite
+2020,H1c,Auvergne-Rhône-Alpes,Savoie,BARBERAZ,4,6748,960276,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Savoie,DULLIN,3,1026,48066,Electricite
+2020,H1c,Auvergne-Rhône-Alpes,Savoie,LA BRIDOIRE,3,11922,2057596,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Savoie,TOURS EN SAVOIE,3,2786,456587,Electricite
+2020,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,ALLONZIER LA CAILLE,5,11126,989743,Electricite
+2020,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,BONNE,5,13414,2775951,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,MARIGNY SAINT MARCEL,3,20479,557070,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,SEYSSEL,3,11854,1833138,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,VIUZ EN SALLAZ,3,10271,1427629,Inconnu
+2020,H1c,Provence-Alpes-Côte d'Azur,Hautes-Alpes,LA SAULCE,3,5819,420407,Electricite
+2020,H1c,Provence-Alpes-Côte d'Azur,Hautes-Alpes,MONTGENEVRE,3,16952,2215682,Inconnu
+2020,H1c,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,AUBAGNE,3,3400,255395,Electricite
+2020,H1c,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,MARSEILLE 03,3,553,29524,Electricite
+2020,H2a,Normandie,Manche,BARNEVILLE CARTERET,3,5527,1427160,Inconnu
+2020,H2a,Normandie,Manche,QUETTREVILLE SUR SIENNE,4,1697,59187,Inconnu
+2020,H2a,Normandie,Manche,SOTTEVAST,3,3501,337347,Inconnu
+2020,H2a,Normandie,Manche,TOLLEVAST,7,17585,1517811,Electricite
+2020,H2a,Normandie,Manche,TREAUVILLE,4,1084,85976,Electricite
+2020,H2a,Normandie,Manche,YQUELON,3,6451,373595,Electricite
+2020,H2a,Bretagne,Côtes-d'Armor,LE MENE,12,23540,4821802,Inconnu
+2020,H2a,Bretagne,Côtes-d'Armor,MATIGNON,3,8958,1968905,Inconnu
+2020,H2a,Bretagne,Côtes-d'Armor,PLESTAN,5,21413,3887125,Electricite
+2020,H2a,Bretagne,Côtes-d'Armor,SAINT NICOLAS DU PELEM,3,7502,1363812,Inconnu
+2020,H2a,Bretagne,Finistère,LANDUDEC,7,4134,1118157,Electricite
+2020,H2a,Bretagne,Finistère,LANRIVOARE,3,5375,162638,Electricite
+2020,H2a,Bretagne,Finistère,LOCRONAN,3,1950,125835,Electricite
+2020,H2a,Bretagne,Finistère,PLUGUFFAN,4,4164,374015,Electricite
+2020,H2a,Bretagne,Finistère,SAINT DIVY,3,7356,760060,Inconnu
+2020,H2a,Bretagne,Morbihan,ALLAIRE,3,7223,1078034,Inconnu
+2020,H2a,Bretagne,Morbihan,CRACH,3,6476,1654558,Inconnu
+2020,H2b,Île-de-France,Hauts-de-Seine,PUTEAUX,11,102825,1787105,Electricite
+2020,H2b,Centre-Val de Loire,Cher,SANCERRE,3,10812,1555423,Inconnu
+2020,H2b,Hauts-de-France,Aisne,SAINT QUENTIN,3,445,19996,Electricite
+2020,H2b,Pays de la Loire,Loire-Atlantique,LE PELLERIN,3,5665,909216,Inconnu
+2020,H2b,Pays de la Loire,Loire-Atlantique,LEGE,7,11624,479016,Electricite
+2020,H2b,Pays de la Loire,Loire-Atlantique,MOUZEIL,6,4086,191779,Electricite
+2020,H2b,Pays de la Loire,Sarthe,SAINTE JAMME SUR SARTHE,5,19213,2929431,Inconnu
+2020,H2b,Pays de la Loire,Vendée,GRAND LANDES,7,1832,155462,Electricite
+2020,H2b,Pays de la Loire,Vendée,LA GAUBRETIERE,3,9609,449831,Inconnu
+2020,H2b,Pays de la Loire,Vendée,LA GENETOUZE,4,2348,119085,Electricite
+2020,H2b,Pays de la Loire,Vendée,SAINT MICHEL EN L HERM,3,7067,455204,Inconnu
+2020,H2b,Pays de la Loire,Vendée,SAINT PROUANT,4,17630,3032725,Inconnu
+2020,H2b,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,6,1883,66853,Electricite
+2020,H2b,Nouvelle-Aquitaine,Charente,LINARS,3,7393,1093812,Inconnu
+2020,H2b,Nouvelle-Aquitaine,Charente-Maritime,SAINT SAUVEUR D AUNIS,3,7721,507170,Electricite
+2020,H2b,Nouvelle-Aquitaine,Charente-Maritime,SAINTE MARIE DE RE,3,10611,1594928,Electricite
+2020,H2b,Nouvelle-Aquitaine,Charente-Maritime,SAINTE SOULLE,3,14975,1617081,Electricite
+2020,H2b,Nouvelle-Aquitaine,Deux-Sèvres,CHATILLON SUR THOUET,3,15762,725548,Inconnu
+2020,H2b,Nouvelle-Aquitaine,Deux-Sèvres,FRESSINES,5,2660,209807,Electricite
+2020,H2b,Nouvelle-Aquitaine,Deux-Sèvres,SAINT VARENT,5,10441,3459241,Inconnu
+2020,H2b,Nouvelle-Aquitaine,Deux-Sèvres,SAUZE VAUSSAIS,4,11292,1710416,Inconnu
+2020,H2b,Nouvelle-Aquitaine,Vienne,BONNEUIL MATOURS,3,1718,96128,Electricite
+2020,H2b,Nouvelle-Aquitaine,Vienne,SAINT GENEST D AMBIERE,5,4999,808918,Inconnu
+2020,H2b,Nouvelle-Aquitaine,Haute-Vienne,LIMOGES,3,5541,524650,Electricite
+2020,H2c,Nouvelle-Aquitaine,Dordogne,SAINT LAURENT DES VIGNES,3,6694,610484,Inconnu
+2020,H2c,Nouvelle-Aquitaine,Gironde,BEAUTIRAN,7,8712,1533505,Inconnu
+2020,H2c,Nouvelle-Aquitaine,Gironde,BEGUEY,3,10238,1876579,Electricite
+2020,H2c,Nouvelle-Aquitaine,Gironde,GRAYAN ET L HOPITAL,19,1235,77562,Electricite
+2020,H2c,Nouvelle-Aquitaine,Gironde,LES ARTIGUES DE LUSSAC,7,2781,45633,Electricite
+2020,H2c,Nouvelle-Aquitaine,Gironde,LES BILLAUX,3,7175,299322,Electricite
+2020,H2c,Nouvelle-Aquitaine,Gironde,PUGNAC,3,5995,648253,Electricite
+2020,H2c,Nouvelle-Aquitaine,Gironde,SAINT BRICE,3,7800,480400,Electricite
+2020,H2c,Nouvelle-Aquitaine,Landes,BENESSE MAREMNE,8,19213,1630479,Electricite
+2020,H2c,Nouvelle-Aquitaine,Landes,MOLIETS ET MAA,3,7369,493927,Electricite
+2020,H2c,Nouvelle-Aquitaine,Landes,PISSOS,3,2607,192337,Electricite
+2020,H2c,Nouvelle-Aquitaine,Landes,YCHOUX,4,2919,166538,Electricite
+2020,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,LAHONCE,9,9547,649938,Electricite
+2020,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,SEVIGNACQ MEYRACQ,3,4031,237050,Inconnu
+2020,H2c,Occitanie,Ariège,SAVERDUN,3,16615,1594533,Inconnu
+2020,H2c,Occitanie,Ariège,VERNIOLLE,4,13657,1664683,Electricite
+2020,H2c,Occitanie,Aveyron,VABRES L ABBAYE,3,4143,971591,Inconnu
+2020,H2c,Occitanie,Haute-Garonne,AUZIELLE,5,2016,161493,Electricite
+2020,H2c,Occitanie,Haute-Garonne,MANE,3,7134,1435368,Inconnu
+2020,H2c,Occitanie,Haute-Garonne,MONTBRUN LAURAGAIS,5,1813,55640,Electricite
+2020,H2c,Occitanie,Lot,CAPDENAC,4,6681,411473,Electricite
+2020,H2c,Occitanie,Lot,LE MONTAT,4,8850,816891,Electricite
+2020,H2c,Occitanie,Tarn,SOUAL,5,16206,2332050,Electricite
+2020,H2d,Auvergne-Rhône-Alpes,Ardèche,ROSIERES,3,7562,1275744,Electricite
+2020,H2d,Auvergne-Rhône-Alpes,Drôme,MIRABEL ET BLACONS,9,2510,179389,Electricite
+2020,H2d,Provence-Alpes-Côte d'Azur,Alpes-de-Haute-Provence,PEYRUIS,3,7302,295580,Electricite
+2020,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,COURTHEZON,3,2708,131569,Electricite
+2020,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,LE THOR,5,19475,1504304,Electricite
+2020,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,MORNAS,4,5419,1823616,Electricite
+2020,H3,Île-de-France,Hauts-de-Seine,PUTEAUX,30,467551,7297450,Electricite
+2020,H3,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,4,835,83775,Electricite
+2020,H3,Bretagne,Ille-et-Vilaine,PACE,8,1466,226366,Electricite
+2020,H3,Occitanie,Gard,AIMARGUES,7,32822,3974510,Electricite
+2020,H3,Occitanie,Hérault,THEZAN LES BEZIERS,5,11837,2764925,Inconnu
+2020,H3,Occitanie,Pyrénées-Orientales,ERR,3,8552,762667,Electricite
+2020,H3,Occitanie,Pyrénées-Orientales,LOS MASOS,3,9854,1196319,Electricite
+2020,H3,Occitanie,Pyrénées-Orientales,SOREDE,8,11254,708344,Electricite
+2020,H3,Provence-Alpes-Côte d'Azur,Alpes-Maritimes,LE ROURET,3,12041,1966734,Inconnu
+2020,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,FONTVIEILLE,4,5860,114425,Electricite
+2020,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,GRANS,13,111923,7002522,Electricite
+2020,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,LANCON PROVENCE,6,10601,2256014,Electricite
+2020,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,ROGNONAS,3,8674,2091382,Electricite
+2020,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,SAINTES MARIES DE LA MER,4,5007,327599,Electricite
+2020,H3,Provence-Alpes-Côte d'Azur,Var,LE LAVANDOU,8,19336,3068725,Electricite
+2020,H3,Provence-Alpes-Côte d'Azur,Var,MONTAUROUX,3,3283,682302,Electricite
+2020,H3,Provence-Alpes-Côte d'Azur,Var,RAYOL CANADEL SUR MER,4,5029,678640,Electricite
+2020,H3,Provence-Alpes-Côte d'Azur,Var,ROCBARON,3,2398,358929,Electricite
+2020,H3,Corse,Corse-du-Sud,AFA,3,20523,4498260,Electricite
+2020,H3,Corse,Corse-du-Sud,PORTO VECCHIO,20,40280,5686035,Electricite
+2020,H3,Corse,Haute-Corse,CALVI,5,9546,1386079,Electricite
+2020,H3,Corse,Haute-Corse,GHISONACCIA,4,12686,569917,Electricite
+2020,H3,Corse,Haute-Corse,L ILE ROUSSE,5,6807,1119787,Electricite
+2020,MAR,Martinique,Martinique,DUCOS,9,1131,243110,Electricite
+2020,MAR,Martinique,Martinique,FORT DE FRANCE,75,189300,26807202,Electricite
+2020,MAR,Martinique,Martinique,LE LAMENTIN,86,207917,28283989,Electricite
+2020,MAR,Martinique,Martinique,SCHOELCHER,11,42256,8056377,Electricite
+2020,MAY,Mayotte,Mayotte,BANDRABOUA,3,6075,197049,Electricite
+2020,MAY,Mayotte,Mayotte,MAMOUDZOU,20,74145,7793758,Electricite
+2020,MAY,Mayotte,Mayotte,PAMANDZI,3,11889,1261436,Electricite
+2020,REU,La Réunion,La Réunion,BRAS PANON,4,6154,1780532,Electricite
+2020,REU,La Réunion,La Réunion,LA POSSESSION,11,35026,4137501,Electricite
+2020,REU,La Réunion,La Réunion,LE PORT,107,262567,30439411,Electricite
+2020,REU,La Réunion,La Réunion,LES AVIRONS,5,12533,495999,Electricite
+2020,REU,La Réunion,La Réunion,SAINT ANDRE,28,66595,3052587,Electricite
+2020,REU,La Réunion,La Réunion,SAINT BENOIT,27,70246,8503318,Electricite
+2020,REU,La Réunion,La Réunion,SAINT LEU,41,54510,8517744,Electricite
+2021,GUA,Collectivités d'Outre-Mer,Saint-Martin,SAINT MARTIN,3,4203,446081,Electricite
+2021,GUA,Guadeloupe,Guadeloupe,BAIE MAHAULT,112,235532,30819082,Electricite
+2021,GUA,Guadeloupe,Guadeloupe,BAILLIF,7,8538,1247179,Electricite
+2021,GUA,Guadeloupe,Guadeloupe,BASSE TERRE,10,19871,1539307,Electricite
+2021,GUA,Guadeloupe,Guadeloupe,GOURBEYRE,7,15065,731261,Electricite
+2021,GUA,Guadeloupe,Guadeloupe,LE MOULE,3,345,43033,Electricite
+2021,GUA,Guadeloupe,Guadeloupe,LES ABYMES,47,112824,19262438,Electricite
+2021,GUA,Guadeloupe,Guadeloupe,PETIT BOURG,12,13789,723051,Electricite
+2021,GUA,Guadeloupe,Guadeloupe,POINTE A PITRE,5,12646,1587580,Electricite
+2021,GUA,Guadeloupe,Guadeloupe,SAINT FRANCOIS,5,7890,2164386,Electricite
+2021,GUY,Guyane,Guyane,CAYENNE,35,83050,8767411,Electricite
+2021,GUY,Guyane,Guyane,KOUROU,5,11054,1911139,Electricite
+2021,GUY,Guyane,Guyane,MATOURY,13,20791,2285002,Electricite
+2021,GUY,Guyane,Guyane,REMIRE MONTJOLY,15,28750,7579280,Electricite
+2021,H1a,Île-de-France,Seine-et-Marne,CHARTRETTES,3,4962,1271222,Inconnu
+2021,H1a,Île-de-France,Seine-et-Marne,MAUREGARD,7,3391,224829,Electricite
+2021,H1a,Île-de-France,Essonne,CHAMARANDE,3,3913,1320937,Inconnu
+2021,H1a,Île-de-France,Essonne,OLLAINVILLE,3,31279,5115491,Inconnu
+2021,H1a,Île-de-France,Essonne,SAINT AUBIN,20,17892,2101808,Electricite
+2021,H1a,Île-de-France,Essonne,SAINT JEAN DE BEAUREGARD,4,651,117630,Electricite
+2021,H1a,Île-de-France,Essonne,VERT LE GRAND,3,8627,3034313,Inconnu
+2021,H1a,Île-de-France,Val-de-Marne,PARIS,3,32745,5984623,Inconnu
+2021,H1a,Île-de-France,Val-d'Oise,BONNEUIL EN FRANCE,5,65561,4291752,Electricite
+2021,H1a,Île-de-France,Val-d'Oise,MERIEL,3,9177,1682569,Inconnu
+2021,H1a,Île-de-France,Val-d'Oise,MONTSOULT,4,79165,21245836,Inconnu
+2021,H1a,Centre-Val de Loire,Eure-et-Loir,BREZOLLES,3,8315,728516,Inconnu
+2021,H1a,Centre-Val de Loire,Eure-et-Loir,TOURY,3,6741,648630,Inconnu
+2021,H1a,Normandie,Calvados,PERIERS EN AUGE,3,3548,254555,Electricite
+2021,H1a,Normandie,Calvados,SAINT MARTIN DES ENTREES,3,14037,3003133,Electricite
+2021,H1a,Normandie,Calvados,TREVIERES,3,3627,351035,Inconnu
+2021,H1a,Normandie,Eure,PONT DE L ARCHE,3,7132,811047,Inconnu
+2021,H1a,Normandie,Orne,RIVES D ANDAINE,3,8677,2597419,Inconnu
+2021,H1a,Normandie,Seine-Maritime,BRETTEVILLE DU GRAND CAUX,3,3822,902140,Inconnu
+2021,H1a,Normandie,Seine-Maritime,PISSY POVILLE,6,5716,708847,Electricite
+2021,H1a,Normandie,Seine-Maritime,SAINT PIERRE DE VARENGEVILLE,3,7975,979870,Inconnu
+2021,H1a,Normandie,Seine-Maritime,SAINT SAENS,3,16098,4214732,Inconnu
+2021,H1a,Hauts-de-France,Oise,LA CHAPELLE EN SERVAL,4,14116,2350690,Inconnu
+2021,H1a,Hauts-de-France,Oise,MILLY SUR THERAIN,4,1055,308567,Electricite
+2021,H1a,Hauts-de-France,Pas-de-Calais,FRESNES LES MONTAUBAN,11,6560,705453,Electricite
+2021,H1a,Hauts-de-France,Pas-de-Calais,LE WAST,3,3869,335112,Inconnu
+2021,H1a,Hauts-de-France,Pas-de-Calais,WIMILLE,3,16245,3542781,Inconnu
+2021,H1a,Grand-Est,Marne,BETHENY,4,16741,820013,Electricite
+2021,H1a,Bretagne,Ille-et-Vilaine,NOYAL SUR VILAINE,3,46525,5738797,Electricite
+2021,H1a,Nouvelle-Aquitaine,Vienne,CHASSENEUIL DU POITOU,3,8422,988800,Inconnu
+2021,H1a,Auvergne-Rhône-Alpes,Rhône,LYON 03,5,11503,1026737,Electricite
+2021,H1b,Centre-Val de Loire,Loiret,DORDIVES,4,7185,1228058,Inconnu
+2021,H1b,Centre-Val de Loire,Loiret,SAINT PERE SUR LOIRE,3,14541,2917343,Inconnu
+2021,H1b,Bourgogne-Franche-Comté,Haute-Saône,JUSSEY,3,7462,1648929,Electricite
+2021,H1b,Bourgogne-Franche-Comté,Yonne,BLENEAU,3,5801,1101182,Inconnu
+2021,H1b,Grand-Est,Meurthe-et-Moselle,CONFLANS EN JARNISY,4,4290,405691,Electricite
+2021,H1b,Grand-Est,Meuse,VASSINCOURT,3,8400,1708524,Fioul
+2021,H1b,Grand-Est,Moselle,REDING,3,3519,248750,Electricite
+2021,H1b,Grand-Est,Bas-Rhin,HUTTENHEIM,3,7190,1042146,Inconnu
+2021,H1b,Grand-Est,Bas-Rhin,KILSTETT,6,583,86760,Electricite
+2021,H1b,Grand-Est,Bas-Rhin,LAMPERTHEIM,6,7135,1226593,Electricite
+2021,H1b,Grand-Est,Bas-Rhin,MARMOUTIER,4,22821,7000635,Inconnu
+2021,H1b,Grand-Est,Bas-Rhin,NIEDERHAUSBERGEN,3,1680,50743,Electricite
+2021,H1b,Grand-Est,Bas-Rhin,ROPPENHEIM,96,43235,5055132,Electricite
+2021,H1b,Occitanie,Tarn,CASTRES,3,4154,758930,Electricite
+2021,H1c,Île-de-France,Hauts-de-Seine,PUTEAUX,15,137884,2376337,Electricite
+2021,H1c,Bourgogne-Franche-Comté,Côte-dOr,EPOISSES,3,2952,385943,Inconnu
+2021,H1c,Bourgogne-Franche-Comté,Côte-dOr,FIXIN,3,8605,783956,Inconnu
+2021,H1c,Bourgogne-Franche-Comté,Côte-dOr,NEUILLY CRIMOLOIS,3,5661,1046848,Inconnu
+2021,H1c,Bourgogne-Franche-Comté,Doubs,GENEUILLE,3,7732,1274373,Inconnu
+2021,H1c,Bourgogne-Franche-Comté,Saône-et-Loire,FARGES LES CHALON,4,5743,956201,Inconnu
+2021,H1c,Bretagne,Côtes-d'Armor,SAINT BRIEUC,5,21494,514587,Electricite
+2021,H1c,Nouvelle-Aquitaine,Creuse,EVAUX LES BAINS,4,14484,1858582,Electricite
+2021,H1c,Nouvelle-Aquitaine,Dordogne,TERRASSON LAVILLEDIEU,3,2077,643676,Inconnu
+2021,H1c,Nouvelle-Aquitaine,Gironde,PESSAC,3,3867,183270,Electricite
+2021,H1c,Auvergne-Rhône-Alpes,Ain,CHAZEY BONS,3,7512,1304302,Electricite
+2021,H1c,Auvergne-Rhône-Alpes,Ain,NEYRON,5,2925,251272,Electricite
+2021,H1c,Auvergne-Rhône-Alpes,Ain,VONNAS,3,9145,1717181,Inconnu
+2021,H1c,Auvergne-Rhône-Alpes,Cantal,ANDELAT,7,8215,858008,Electricite
+2021,H1c,Auvergne-Rhône-Alpes,Loire,UNIEUX,3,10177,1125079,Inconnu
+2021,H1c,Auvergne-Rhône-Alpes,Haute-Loire,COHADE,3,7124,1206613,Inconnu
+2021,H1c,Auvergne-Rhône-Alpes,Puy-de-Dôme,JOB,4,5176,980167,Inconnu
+2021,H1c,Auvergne-Rhône-Alpes,Savoie,DULLIN,3,1026,70939,Electricite
+2021,H1c,Auvergne-Rhône-Alpes,Savoie,NOVALAISE,5,10835,2001385,Inconnu
+2021,H1c,Auvergne-Rhône-Alpes,Savoie,TOURS EN SAVOIE,3,2786,401120,Electricite
+2021,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,BONNE,5,13414,3112065,Inconnu
+2021,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,VIUZ EN SALLAZ,3,10271,1467700,Inconnu
+2021,H1c,Provence-Alpes-Côte d'Azur,Hautes-Alpes,LA SAULCE,3,5819,439960,Electricite
+2021,H1c,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,AUBAGNE,3,3400,281804,Electricite
+2021,H1c,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,MARSEILLE 03,3,553,36748,Electricite
+2021,H2a,Normandie,Manche,QUETTREVILLE SUR SIENNE,4,1304,37193,Inconnu
+2021,H2a,Normandie,Manche,TOLLEVAST,7,17585,1772455,Electricite
+2021,H2a,Normandie,Manche,TREAUVILLE,5,1314,95366,Electricite
+2021,H2a,Bretagne,Côtes-d'Armor,MATIGNON,3,8958,2057235,Inconnu
+2021,H2a,Bretagne,Côtes-d'Armor,PLESTAN,5,21413,3959230,Electricite
+2021,H2a,Bretagne,Côtes-d'Armor,SAINT NICOLAS DU PELEM,3,7502,1419369,Inconnu
+2021,H2a,Bretagne,Finistère,LANDUDEC,7,4134,1021428,Electricite
+2021,H2a,Bretagne,Finistère,LANRIVOARE,3,5375,187179,Electricite
+2021,H2a,Bretagne,Finistère,LOCRONAN,3,1950,129783,Electricite
+2021,H2a,Bretagne,Finistère,PLUGUFFAN,4,4164,361199,Electricite
+2021,H2a,Bretagne,Finistère,SAINT DIVY,3,7356,729778,Inconnu
+2021,H2a,Bretagne,Ille-et-Vilaine,SAINT BRIAC SUR MER,4,4343,586736,Inconnu
+2021,H2a,Bretagne,Morbihan,ALLAIRE,3,7223,1135444,Inconnu
+2021,H2a,Bretagne,Morbihan,CRACH,3,6476,1750970,Inconnu
+2021,H2a,Bretagne,Morbihan,LE PALAIS,3,5739,1111884,Electricite
+2021,H2b,Île-de-France,Paris,PARIS 15,3,2185,93639,Electricite
+2021,H2b,Île-de-France,Hauts-de-Seine,PUTEAUX,12,103050,1913911,Electricite
+2021,H2b,Centre-Val de Loire,Cher,SANCERRE,3,10812,1645244,Inconnu
+2021,H2b,Centre-Val de Loire,Indre-et-Loire,NAZELLES NEGRON,3,3523,428078,Electricite
+2021,H2b,Pays de la Loire,Loire-Atlantique,LEGE,7,11624,648671,Electricite
+2021,H2b,Pays de la Loire,Loire-Atlantique,MOUZEIL,6,4086,238912,Electricite
+2021,H2b,Pays de la Loire,Mayenne,CHARCHIGNE,3,4112,566473,Electricite
+2021,H2b,Pays de la Loire,Sarthe,ECOMMOY,3,25599,3587846,Inconnu
+2021,H2b,Pays de la Loire,Sarthe,SAINTE JAMME SUR SARTHE,5,19213,3064842,Inconnu
+2021,H2b,Pays de la Loire,Vendée,BOURNEZEAU,4,8711,2378580,Inconnu
+2021,H2b,Pays de la Loire,Vendée,GRAND LANDES,7,1899,161769,Electricite
+2021,H2b,Pays de la Loire,Vendée,LA GENETOUZE,4,2348,153972,Electricite
+2021,H2b,Pays de la Loire,Vendée,MACHE,4,12347,548280,Electricite
+2021,H2b,Pays de la Loire,Vendée,SAINT PROUANT,5,19180,3353911,Inconnu
+2021,H2b,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,5,1811,80574,Electricite
+2021,H2b,Nouvelle-Aquitaine,Charente,LINARS,3,7393,1123963,Inconnu
+2021,H2b,Nouvelle-Aquitaine,Charente-Maritime,ECHILLAIS,3,9970,707769,Electricite
+2021,H2b,Nouvelle-Aquitaine,Charente-Maritime,SAINT SAUVEUR D AUNIS,3,7721,580356,Electricite
+2021,H2b,Nouvelle-Aquitaine,Charente-Maritime,SAINTE SOULLE,3,14975,1870899,Electricite
+2021,H2b,Nouvelle-Aquitaine,Deux-Sèvres,FRESSINES,5,2660,239135,Electricite
+2021,H2b,Nouvelle-Aquitaine,Vienne,BONNEUIL MATOURS,3,1718,118025,Electricite
+2021,H2b,Nouvelle-Aquitaine,Vienne,SAINT GENEST D AMBIERE,5,4999,915520,Inconnu
+2021,H2b,Nouvelle-Aquitaine,Haute-Vienne,LIMOGES,3,5541,621719,Electricite
+2021,H2c,Hauts-de-France,Aisne,SAINT QUENTIN,4,460,37451,Electricite
+2021,H2c,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,3,626,40944,Electricite
+2021,H2c,Nouvelle-Aquitaine,Dordogne,THONAC,3,2366,181781,Electricite
+2021,H2c,Nouvelle-Aquitaine,Gironde,BEAUTIRAN,7,8712,1648559,Inconnu
+2021,H2c,Nouvelle-Aquitaine,Gironde,GRAYAN ET L HOPITAL,18,1170,102482,Electricite
+2021,H2c,Nouvelle-Aquitaine,Gironde,LES ARTIGUES DE LUSSAC,7,2781,35086,Electricite
+2021,H2c,Nouvelle-Aquitaine,Gironde,LES BILLAUX,3,7175,346956,Electricite
+2021,H2c,Nouvelle-Aquitaine,Gironde,SAINT BRICE,3,7800,536678,Electricite
+2021,H2c,Nouvelle-Aquitaine,Gironde,SAINT CIERS SUR GIRONDE,3,10334,711916,Electricite
+2021,H2c,Nouvelle-Aquitaine,Landes,MOLIETS ET MAA,3,7369,394698,Electricite
+2021,H2c,Nouvelle-Aquitaine,Landes,PISSOS,3,2607,170496,Electricite
+2021,H2c,Nouvelle-Aquitaine,Landes,SABRES,5,3285,328407,Electricite
+2021,H2c,Nouvelle-Aquitaine,Lot-et-Garonne,FOULAYRONNES,3,7541,1870831,Inconnu
+2021,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,LAHONCE,10,10382,719222,Electricite
+2021,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,SAUVAGNON,4,8522,649198,Electricite
+2021,H2c,Occitanie,Ariège,SAVERDUN,3,15664,1557038,Inconnu
+2021,H2c,Occitanie,Ariège,VERNIOLLE,4,13738,1701062,Electricite
+2021,H2c,Occitanie,Aveyron,VABRES L ABBAYE,3,4143,977857,Inconnu
+2021,H2c,Occitanie,Haute-Garonne,AUZIELLE,5,2016,199297,Electricite
+2021,H2c,Occitanie,Haute-Garonne,MANE,3,7134,1516889,Inconnu
+2021,H2c,Occitanie,Haute-Garonne,MONTBRUN LAURAGAIS,5,1813,69520,Electricite
+2021,H2c,Occitanie,Lot,CAPDENAC,4,6681,459483,Electricite
+2021,H2c,Occitanie,Lot,LE MONTAT,5,11425,978549,Electricite
+2021,H2c,Occitanie,Tarn,CAMBOUNET SUR LE SOR,3,4540,312490,Electricite
+2021,H2c,Occitanie,Tarn,SOUAL,5,16206,2168721,Electricite
+2021,H2d,Hauts-de-France,Aisne,SAINT QUENTIN,4,377,31904,Electricite
+2021,H2d,Auvergne-Rhône-Alpes,Drôme,MIRABEL ET BLACONS,10,2664,192661,Electricite
+2021,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,COURTHEZON,3,2708,140432,Electricite
+2021,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,LE THOR,6,20854,505689,Electricite
+2021,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,MORNAS,4,5419,1758199,Electricite
+2021,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,SAINT SATURNIN LES AVIGNON,3,6457,913092,Inconnu
+2021,H3,Île-de-France,Hauts-de-Seine,PUTEAUX,30,455753,7436357,Electricite
+2021,H3,Hauts-de-France,Aisne,SAINT QUENTIN,14,1615,81534,Electricite
+2021,H3,Hauts-de-France,Oise,BEAUVAIS,3,15230,1744808,Electricite
+2021,H3,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,3,608,34798,Electricite
+2021,H3,Bretagne,Ille-et-Vilaine,PACE,8,1389,202117,Electricite
+2021,H3,Occitanie,Aude,SAINT MARCEL SUR AUDE,3,7701,1420455,Inconnu
+2021,H3,Occitanie,Gard,AIMARGUES,8,35060,3770587,Electricite
+2021,H3,Occitanie,Hérault,GRABELS,11,24200,22083177,Inconnu
+2021,H3,Occitanie,Pyrénées-Orientales,SOREDE,6,3652,335743,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Alpes-Maritimes,CASTAGNIERS,8,6087,1113986,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Alpes-Maritimes,LA GAUDE,3,18103,2556233,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Alpes-Maritimes,LE ROURET,3,12041,2063721,Inconnu
+2021,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,FONTVIEILLE,4,5860,116712,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,LANCON PROVENCE,6,10601,3429640,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,ROGNONAS,3,8674,2081045,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,SAINTES MARIES DE LA MER,4,5007,427357,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Var,FAYENCE,3,7352,2305933,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Var,LE LAVANDOU,8,19336,3177614,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Var,MONTAUROUX,3,3283,707525,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Var,RAYOL CANADEL SUR MER,4,5029,743643,Electricite
+2021,H3,Provence-Alpes-Côte d'Azur,Var,ROCBARON,3,2398,371370,Electricite
+2021,H3,Corse,Corse-du-Sud,AFA,4,22939,4871051,Electricite
+2021,H3,Corse,Corse-du-Sud,PORTO VECCHIO,22,41053,6008144,Electricite
+2021,H3,Corse,Haute-Corse,GHISONACCIA,4,12686,831295,Electricite
+2021,H3,Corse,Haute-Corse,L ILE ROUSSE,7,10833,1252864,Electricite
+2021,MAR,Guadeloupe,Guadeloupe,BAIE MAHAULT,3,567,68554,Electricite
+2021,MAR,Martinique,Martinique,DUCOS,17,2072,411751,Electricite
+2021,MAR,Martinique,Martinique,LE LAMENTIN,95,243399,31502941,Electricite
+2021,MAR,Martinique,Martinique,LE MARIN,4,2294,362737,Electricite
+2021,MAR,Martinique,Martinique,SCHOELCHER,13,42551,8210579,Electricite
+2021,MAY,Mayotte,Mayotte,MAMOUDZOU,13,32203,2661442,Electricite
+2021,REU,La Réunion,La Réunion,BRAS PANON,6,18690,1957673,Electricite
+2021,REU,La Réunion,La Réunion,LA PLAINE DES PALMISTES,3,5509,955655,Electricite
+2021,REU,La Réunion,La Réunion,LA POSSESSION,13,39145,5791738,Electricite
+2021,REU,La Réunion,La Réunion,LES AVIRONS,5,12533,574131,Electricite
+2021,REU,La Réunion,La Réunion,PETITE ILE,12,14585,1558790,Electricite
+2021,REU,La Réunion,La Réunion,SAINT ANDRE,31,82016,3432846,Electricite
+2021,REU,La Réunion,La Réunion,SAINT BENOIT,30,87965,9344659,Electricite
+2021,REU,La Réunion,La Réunion,SAINT LEU,44,65052,9426752,Electricite
+2022,GUA,Guadeloupe,Guadeloupe,BAIE MAHAULT,64,152734,17486243,Electricite
+2022,GUA,Guadeloupe,Guadeloupe,BAILLIF,7,8545,1190572,Electricite
+2022,GUA,Guadeloupe,Guadeloupe,BASSE TERRE,6,9528,425281,Electricite
+2022,GUA,Guadeloupe,Guadeloupe,GOURBEYRE,4,10991,800965,Electricite
+2022,GUA,Guadeloupe,Guadeloupe,LE GOSIER,3,264,54729,Electricite
+2022,GUA,Guadeloupe,Guadeloupe,LE MOULE,3,360,35930,Electricite
+2022,GUA,Guadeloupe,Guadeloupe,SAINT FRANCOIS,4,5871,298542,Electricite
+2022,GUY,Guyane,Guyane,CAYENNE,22,60390,6477439,Electricite
+2022,GUY,Guyane,Guyane,KOUROU,8,14326,2507279,Electricite
+2022,GUY,Guyane,Guyane,MATOURY,3,306,82976,Electricite
+2022,GUY,Guyane,Guyane,REMIRE MONTJOLY,10,14915,2609749,Electricite
+2022,H1a,Île-de-France,Seine-et-Marne,COUILLY PONT AUX DAMES,4,8326,2100067,Electricite
+2022,H1a,Île-de-France,Seine-et-Marne,SOUPPES SUR LOING,3,9158,2517138,Inconnu
+2022,H1a,Île-de-France,Essonne,BIEVRES,7,5073,511843,Electricite
+2022,H1a,Île-de-France,Essonne,GOMETZ LA VILLE,3,4533,1366443,Inconnu
+2022,H1a,Île-de-France,Essonne,SAINT JEAN DE BEAUREGARD,4,651,127957,Electricite
+2022,H1a,Île-de-France,Essonne,VERT LE GRAND,3,8627,3027794,Inconnu
+2022,H1a,Île-de-France,Essonne,VILLIERS SUR ORGE,3,1136,39169,Electricite
+2022,H1a,Île-de-France,Val-de-Marne,SANTENY,3,23599,5460083,Inconnu
+2022,H1a,Île-de-France,Val-d'Oise,BONNEUIL EN FRANCE,5,65561,4164178,Electricite
+2022,H1a,Île-de-France,Val-d'Oise,BRUYERES SUR OISE,3,126541,2114542,Inconnu
+2022,H1a,Île-de-France,Val-d'Oise,SAINT PRIX,3,4819,2213847,Inconnu
+2022,H1a,Île-de-France,Val-d'Oise,VEMARS,5,31852,1183673,Electricite
+2022,H1a,Normandie,Calvados,TREVIERES,3,4033,313691,Inconnu
+2022,H1a,Normandie,Eure,PONT DE L ARCHE,3,7132,756557,Inconnu
+2022,H1a,Normandie,Eure,THIBERVILLE,3,2335,79899,Electricite
+2022,H1a,Normandie,Seine-Maritime,PISSY POVILLE,5,6321,666394,Electricite
+2022,H1a,Hauts-de-France,Aisne,ESSOMES SUR MARNE,6,6610,744515,Electricite
+2022,H1a,Hauts-de-France,Aisne,SAINT ERME OUTRE ET RAMECOURT,4,12062,1455295,Inconnu
+2022,H1a,Hauts-de-France,Nord,BOESCHEPE,3,3620,283227,Electricite
+2022,H1a,Hauts-de-France,Nord,WAZIERS,5,22329,2386977,Electricite
+2022,H1a,Hauts-de-France,Oise,AGNETZ,4,5701,389269,Electricite
+2022,H1a,Hauts-de-France,Oise,LA CHAPELLE EN SERVAL,4,12896,3146087,Inconnu
+2022,H1a,Hauts-de-France,Oise,LE PLESSIS BELLEVILLE,6,21893,3612276,Inconnu
+2022,H1a,Hauts-de-France,Pas-de-Calais,FRESNES LES MONTAUBAN,13,4312,284748,Electricite
+2022,H1a,Hauts-de-France,Pas-de-Calais,PERNES,3,9068,1059626,Inconnu
+2022,H1a,Hauts-de-France,Somme,CHAULNES,7,42241,2964323,Inconnu
+2022,H1a,Grand-Est,Marne,BETHENY,4,16741,733385,Electricite
+2022,H1a,Bretagne,Ille-et-Vilaine,NOYAL SUR VILAINE,3,46525,8697023,Electricite
+2022,H1a,Bretagne,Morbihan,CARENTOIR,3,17731,7635082,Electricite
+2022,H1b,Centre-Val de Loire,Loiret,PITHIVIERS LE VIEIL,3,10470,1669817,Inconnu
+2022,H1b,Bourgogne-Franche-Comté,Nièvre,CHATEAU CHINON VILLE,3,4527,1616815,Inconnu
+2022,H1b,Bourgogne-Franche-Comté,Yonne,L ISLE SUR SEREIN,4,5481,784209,Inconnu
+2022,H1b,Bourgogne-Franche-Comté,Yonne,SAINT GEORGES SUR BAULCHE,4,1564,541524,Inconnu
+2022,H1b,Bourgogne-Franche-Comté,Yonne,VENOY,4,6023,2126146,Electricite
+2022,H1b,Grand-Est,Meurthe-et-Moselle,CONFLANS EN JARNISY,4,3857,255070,Electricite
+2022,H1b,Grand-Est,Meuse,ETAIN,3,6147,764056,Inconnu
+2022,H1b,Grand-Est,Moselle,ARS LAQUENEXY,4,2417,134994,Electricite
+2022,H1b,Grand-Est,Moselle,LE BAN SAINT MARTIN,4,1420,178805,Electricite
+2022,H1b,Grand-Est,Moselle,OGY MONTOY FLANVILLE,3,8581,1801208,Inconnu
+2022,H1b,Grand-Est,Bas-Rhin,ROPPENHEIM,21,6781,1219374,Electricite
+2022,H1b,Grand-Est,Bas-Rhin,SOULTZ SOUS FORETS,3,9120,2562697,Inconnu
+2022,H1b,Grand-Est,Haut-Rhin,HABSHEIM,3,5846,1029849,Inconnu
+2022,H1b,Grand-Est,Vosges,DINOZE,3,6042,1300897,Inconnu
+2022,H1b,Occitanie,Tarn,ALBI,3,7570,753224,Electricite
+2022,H1c,Bourgogne-Franche-Comté,Côte-dOr,LOSNE,3,2383,468493,Inconnu
+2022,H1c,Bourgogne-Franche-Comté,Doubs,GENEUILLE,3,7732,1165638,Inconnu
+2022,H1c,Bourgogne-Franche-Comté,Doubs,VALDAHON,3,3373,540317,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Ain,NEYRON,5,2091,169253,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Cantal,ANDELAT,6,8275,582662,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Isère,ALLEVARD,3,5234,1005253,Inconnu
+2022,H1c,Auvergne-Rhône-Alpes,Isère,BRESSON,3,8099,2350185,Inconnu
+2022,H1c,Auvergne-Rhône-Alpes,Isère,DOMARIN,5,11051,1831428,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Isère,SAINT SAUVEUR,4,13987,2017137,Inconnu
+2022,H1c,Auvergne-Rhône-Alpes,Loire,CHAVANAY,3,11138,2042165,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Haute-Loire,CRAPONNE SUR ARZON,7,10471,1392526,Inconnu
+2022,H1c,Auvergne-Rhône-Alpes,Puy-de-Dôme,LA BOURBOULE,3,5670,1190200,Inconnu
+2022,H1c,Auvergne-Rhône-Alpes,Rhône,SATHONAY VILLAGE,3,4864,229727,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Rhône,SAVIGNY,3,13773,909704,Inconnu
+2022,H1c,Auvergne-Rhône-Alpes,Savoie,DULLIN,5,2706,175208,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Savoie,MERY,3,5910,349669,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Savoie,VAL CENIS,3,8435,1207735,Inconnu
+2022,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,ALLONZIER LA CAILLE,5,13174,3231583,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,CHAMPANGES,4,1746,92234,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,DOMANCY,3,7408,1977075,Electricite
+2022,H1c,Auvergne-Rhône-Alpes,Haute-Savoie,JUVIGNY,5,1946,408715,Electricite
+2022,H1c,Provence-Alpes-Côte d'Azur,Hautes-Alpes,VEYNES,3,5601,1585294,Inconnu
+2022,H1c,Provence-Alpes-Côte d'Azur,Alpes-Maritimes,NICE,5,7885,2734025,Electricite
+2022,H2a,Île-de-France,Hauts-de-Seine,CLICHY,3,9550,153209,Electricite
+2022,H2a,Normandie,Manche,TOLLEVAST,5,14391,1282075,Electricite
+2022,H2a,Normandie,Manche,TREAUVILLE,5,1314,115539,Electricite
+2022,H2a,Hauts-de-France,Aisne,SAINT QUENTIN,3,312,15699,Electricite
+2022,H2a,Bretagne,Côtes-d'Armor,PLESTAN,3,7680,536461,Electricite
+2022,H2a,Bretagne,Côtes-d'Armor,PLOULEC H,4,7121,1316115,Inconnu
+2022,H2a,Bretagne,Finistère,DAOULAS,4,4509,1007601,Inconnu
+2022,H2a,Bretagne,Finistère,LANDUDEC,7,4134,896637,Electricite
+2022,H2a,Bretagne,Finistère,LOCRONAN,3,1950,116021,Electricite
+2022,H2a,Bretagne,Finistère,PLUGUFFAN,4,4164,389121,Electricite
+2022,H2a,Bretagne,Ille-et-Vilaine,BEDEE,6,14277,1995728,Inconnu
+2022,H2a,Bretagne,Ille-et-Vilaine,BREAL SOUS MONTFORT,3,9427,1654333,Inconnu
+2022,H2a,Bretagne,Ille-et-Vilaine,CANCALE,3,14622,2615078,Inconnu
+2022,H2a,Bretagne,Morbihan,ARZON,3,5054,1095409,Electricite
+2022,H2a,Bretagne,Morbihan,CRACH,3,7863,1565965,Inconnu
+2022,H2a,Bretagne,Morbihan,MOREAC,5,22565,7252200,Electricite
+2022,H2b,Île-de-France,Yvelines,VELIZY VILLACOUBLAY,3,431,59216,Electricite
+2022,H2b,Centre-Val de Loire,Indre-et-Loire,NAZELLES NEGRON,3,3072,397378,Electricite
+2022,H2b,Pays de la Loire,Loire-Atlantique,LA PLAINE SUR MER,3,4236,799413,Inconnu
+2022,H2b,Pays de la Loire,Loire-Atlantique,MOUZEIL,6,4086,177248,Electricite
+2022,H2b,Pays de la Loire,Mayenne,CHARCHIGNE,3,4987,710255,Electricite
+2022,H2b,Pays de la Loire,Sarthe,ROEZE SUR SARTHE,3,6001,1543351,Inconnu
+2022,H2b,Pays de la Loire,Vendée,BOURNEZEAU,4,8711,2488642,Inconnu
+2022,H2b,Pays de la Loire,Vendée,COMMEQUIERS,3,4436,585280,Electricite
+2022,H2b,Pays de la Loire,Vendée,FALLERON,7,4932,300817,Electricite
+2022,H2b,Pays de la Loire,Vendée,L ILE D YEU,3,1884,177019,Electricite
+2022,H2b,Pays de la Loire,Vendée,LE BOUPERE,6,6304,508052,Electricite
+2022,H2b,Pays de la Loire,Vendée,MACHE,4,12347,517080,Electricite
+2022,H2b,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,7,2409,89249,Electricite
+2022,H2b,Bretagne,Ille-et-Vilaine,RENNES,3,345,53539,Electricite
+2022,H2b,Nouvelle-Aquitaine,Charente,MONTMOREAU,3,6051,1087594,Inconnu
+2022,H2b,Nouvelle-Aquitaine,Charente-Maritime,DOLUS D OLERON,4,11356,2304375,Inconnu
+2022,H2b,Nouvelle-Aquitaine,Charente-Maritime,SAINT CESAIRE,3,3661,462993,Inconnu
+2022,H2b,Nouvelle-Aquitaine,Charente-Maritime,SAINTE MARIE DE RE,3,10611,1905564,Electricite
+2022,H2b,Nouvelle-Aquitaine,Deux-Sèvres,CERIZAY,3,15898,1922751,Inconnu
+2022,H2b,Nouvelle-Aquitaine,Deux-Sèvres,LEZAY,4,5862,1144266,Inconnu
+2022,H2b,Nouvelle-Aquitaine,Vienne,BONNEUIL MATOURS,3,1718,100167,Electricite
+2022,H2c,Île-de-France,Hauts-de-Seine,NANTERRE,3,4511,1145701,Electricite
+2022,H2c,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,5,1473,80613,Electricite
+2022,H2c,Nouvelle-Aquitaine,Dordogne,THIVIERS,3,7937,1315040,Inconnu
+2022,H2c,Nouvelle-Aquitaine,Gironde,AVENSAN,4,10007,3565823,Inconnu
+2022,H2c,Nouvelle-Aquitaine,Gironde,GRAYAN ET L HOPITAL,18,1300,75886,Electricite
+2022,H2c,Nouvelle-Aquitaine,Gironde,MARTIGNAS SUR JALLE,4,24225,1617649,Electricite
+2022,H2c,Nouvelle-Aquitaine,Gironde,PUGNAC,3,6450,1289066,Inconnu
+2022,H2c,Nouvelle-Aquitaine,Gironde,SAINT BRICE,3,8100,514598,Electricite
+2022,H2c,Nouvelle-Aquitaine,Landes,LABOUHEYRE,3,5318,1829666,Inconnu
+2022,H2c,Nouvelle-Aquitaine,Landes,MOLIETS ET MAA,3,7369,621627,Electricite
+2022,H2c,Nouvelle-Aquitaine,Landes,PISSOS,3,2607,182126,Electricite
+2022,H2c,Nouvelle-Aquitaine,Landes,SABRES,4,2748,362107,Electricite
+2022,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,IDRON,3,12158,1855847,Electricite
+2022,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,LACQ,3,2422,211114,Electricite
+2022,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,LAHONCE,8,7960,658811,Electricite
+2022,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,MAZEROLLES,3,5477,401958,Electricite
+2022,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,PARDIES,3,3854,107034,Electricite
+2022,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,SAINT PIERRE D IRUBE,12,55496,5231814,Electricite
+2022,H2c,Nouvelle-Aquitaine,Pyrénées-Atlantiques,SAUVAGNON,4,8522,633170,Electricite
+2022,H2c,Occitanie,Ariège,SAINT JEAN DU FALGA,12,16748,2393006,Electricite
+2022,H2c,Occitanie,Ariège,VERNIOLLE,5,15028,1749433,Electricite
+2022,H2c,Occitanie,Haute-Garonne,AUSSONNE,4,408,93774,Electricite
+2022,H2c,Occitanie,Haute-Garonne,AUZIELLE,5,2016,190101,Electricite
+2022,H2c,Occitanie,Haute-Garonne,ISSUS,4,1351,81714,Electricite
+2022,H2c,Occitanie,Haute-Garonne,MONDONVILLE,4,13421,1683046,Electricite
+2022,H2c,Occitanie,Haute-Garonne,MONTRABE,3,4125,177817,Electricite
+2022,H2c,Occitanie,Lot,CAPDENAC,5,8119,588723,Electricite
+2022,H2c,Occitanie,Hautes-Pyrénées,ODOS,4,13689,837351,Electricite
+2022,H2c,Occitanie,Tarn,SOUAL,5,16206,2127662,Electricite
+2022,H2c,Auvergne-Rhône-Alpes,Drôme,ALIXAN,3,739,44053,Electricite
+2022,H2d,Hauts-de-France,Aisne,SAINT QUENTIN,5,495,41167,Electricite
+2022,H2d,Auvergne-Rhône-Alpes,Ardèche,LALEVADE D ARDECHE,3,6474,1497341,Inconnu
+2022,H2d,Auvergne-Rhône-Alpes,Drôme,BEAUSEMBLANT,4,26687,928185,Electricite
+2022,H2d,Auvergne-Rhône-Alpes,Drôme,CHATEAUNEUF DU RHONE,4,3796,140919,Electricite
+2022,H2d,Auvergne-Rhône-Alpes,Drôme,CHATEAUNEUF SUR ISERE,5,15912,1423210,Electricite
+2022,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,COURTHEZON,3,2708,137595,Electricite
+2022,H2d,Provence-Alpes-Côte d'Azur,Vaucluse,LE THOR,5,18572,445254,Electricite
+2022,H3,Île-de-France,Paris,PARIS 08,3,2345,289124,Electricite
+2022,H3,Hauts-de-France,Aisne,SAINT QUENTIN,22,2708,129516,Electricite
+2022,H3,Hauts-de-France,Oise,BEAUVAIS,3,15230,1758478,Electricite
+2022,H3,Bretagne,Ille-et-Vilaine,CESSON SEVIGNE,3,598,27307,Electricite
+2022,H3,Occitanie,Aude,COURSAN,3,4785,868551,Inconnu
+2022,H3,Occitanie,Gard,AIMARGUES,5,24019,3612590,Electricite
+2022,H3,Occitanie,Gard,SAINT PRIVAT DES VIEUX,4,10675,1052178,Electricite
+2022,H3,Occitanie,Hérault,SERVIAN,3,11895,1573210,Inconnu
+2022,H3,Occitanie,Pyrénées-Orientales,CANOHES,3,6781,495768,Inconnu
+2022,H3,Occitanie,Pyrénées-Orientales,LAROQUE DES ALBERES,4,7225,1693320,Electricite
+2022,H3,Occitanie,Pyrénées-Orientales,SOREDE,4,1973,83919,Electricite
+2022,H3,Provence-Alpes-Côte d'Azur,Alpes-Maritimes,CASTAGNIERS,3,1195,33038,Electricite
+2022,H3,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,LANCON PROVENCE,5,8812,3242363,Electricite
+2022,H3,Provence-Alpes-Côte d'Azur,Var,LA LONDE LES MAURES,4,6947,1604338,Electricite
+2022,H3,Provence-Alpes-Côte d'Azur,Var,LE LAVANDOU,7,17178,3050103,Electricite
+2022,H3,Provence-Alpes-Côte d'Azur,Var,RAYOL CANADEL SUR MER,4,5029,771820,Electricite
+2022,H3,Corse,Corse-du-Sud,PORTO VECCHIO,15,32952,4556496,Electricite
+2022,H3,Corse,Haute-Corse,CALVI,7,13684,1659309,Electricite
+2022,H3,Corse,Haute-Corse,CORTE,7,10313,1903468,Electricite
+2022,H3,Corse,Haute-Corse,FURIANI,18,59423,5999093,Electricite
+2022,H3,Corse,Haute-Corse,GHISONACCIA,4,4536,400843,Electricite
+2022,MAR,Martinique,Martinique,LE LAMENTIN,45,131557,20965767,Electricite
+2022,MAR,Martinique,Martinique,LE MARIN,3,1303,294550,Electricite
+2022,MAR,Martinique,Martinique,SCHOELCHER,6,15990,1704128,Electricite
+2022,MAR,Martinique,Martinique,TRINITE,3,8691,1323788,Electricite
+2022,MAY,Mayotte,Mayotte,MAMOUDZOU,11,41996,2549761,Electricite
+2022,REU,La Réunion,La Réunion,L ETANG SALE,5,17801,2176908,Electricite
+2022,REU,La Réunion,La Réunion,LA POSSESSION,24,52328,4881596,Electricite
+2022,REU,La Réunion,La Réunion,LES AVIRONS,5,12533,585829,Electricite
+2022,REU,La Réunion,La Réunion,SAINT ANDRE,25,52775,2347177,Electricite
+2022,REU,La Réunion,La Réunion,SAINT LEU,36,55225,7986899,Electricite
+2022,REU,La Réunion,La Réunion,SAINT LOUIS,29,61152,8062003,Electricite
+Année de référence,GUY,Guyane,Guyane,Inconnu,3,7644,249945,Inconnu
+Année de référence,H1a,Normandie,Manche,Inconnu,4,13205,1992897,Inconnu
+Année de référence,H1a,Grand-Est,Aube,Inconnu,3,4695,660995,Inconnu
+Année de référence,H1a,Grand-Est,Bas-Rhin,Inconnu,5,5580,1163822,Inconnu
+Année de référence,H1a,Nouvelle-Aquitaine,Gironde,Inconnu,7,9537,893927,Inconnu
+Année de référence,H1a,Nouvelle-Aquitaine,Pyrénées-Atlantiques,Inconnu,4,4879,939044,Inconnu
+Année de référence,H1a,Nouvelle-Aquitaine,Deux-Sèvres,Inconnu,4,984,114819,Inconnu
+Année de référence,H1a,Nouvelle-Aquitaine,Vienne,Inconnu,3,9681,1547978,Inconnu
+Année de référence,H1a,Auvergne-Rhône-Alpes,Ain,Inconnu,4,3293,467674,Inconnu
+Année de référence,H1a,Auvergne-Rhône-Alpes,Isère,Inconnu,5,4911,784065,Inconnu
+Année de référence,H1b,Centre-Val de Loire,Loir-et-Cher,Inconnu,3,30347,2860375,Inconnu
+Année de référence,H1b,Hauts-de-France,Aisne,Inconnu,7,19562,4124779,Inconnu
+Année de référence,H1b,Hauts-de-France,Nord,Inconnu,4,2654,356936,Inconnu
+Année de référence,H1b,Occitanie,Tarn,Inconnu,5,8562,1554250,Inconnu
+Année de référence,H1c,Île-de-France,Paris,Inconnu,7,88836,7877709,Inconnu
+Année de référence,H1c,Île-de-France,Seine-et-Marne,Inconnu,3,206,19825,Inconnu
+Année de référence,H1c,Île-de-France,Essonne,Inconnu,3,897,193123,Inconnu
+Année de référence,H1c,Île-de-France,Val-de-Marne,Inconnu,3,361,44236,Inconnu
+Année de référence,H1c,Auvergne-Rhône-Alpes,Ardèche,Inconnu,4,7221,976021,Inconnu
+Année de référence,H1c,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,Inconnu,8,7790,685830,Inconnu
+Année de référence,H2b,Centre-Val de Loire,Loiret,Inconnu,4,9354,3201024,Inconnu
+Année de référence,H2b,Nouvelle-Aquitaine,Pyrénées-Atlantiques,Inconnu,3,5905,1359011,Inconnu
+Année de référence,H2c,Occitanie,Pyrénées-Orientales,Inconnu,4,14054,2216035,Inconnu
+Année de référence,H2d,Île-de-France,Seine-et-Marne,Inconnu,3,5307,835082,Inconnu
+Année de référence,H2d,Île-de-France,Hauts-de-Seine,Inconnu,3,45789,2798411,Inconnu
+Année de référence,H2d,Nouvelle-Aquitaine,Landes,Inconnu,6,12038,2437313,Inconnu
+Année de référence,H2d,Auvergne-Rhône-Alpes,Puy-de-Dôme,Inconnu,3,4484,750231,Inconnu
+Année de référence,H3,Hauts-de-France,Oise,Inconnu,7,17243,3225557,Inconnu
+Année de référence,H3,Occitanie,Haute-Garonne,Inconnu,7,16101,1384398,Inconnu
+Année de référence,MAY,Mayotte,Mayotte,Inconnu,14,71962,3201199,Inconnu
+2020,GUY,Guyane,Guyane,Inconnu,3,7644,240072,Inconnu
+2020,H1a,Centre-Val de Loire,Cher,Inconnu,3,8124,638305,Inconnu
+2020,H1a,Bourgogne-Franche-Comté,Saône-et-Loire,Inconnu,3,8834,1468091,Inconnu
+2020,H1a,Bourgogne-Franche-Comté,Yonne,Inconnu,3,4900,946385,Inconnu
+2020,H1a,Normandie,Manche,Inconnu,6,19976,2342092,Inconnu
+2020,H1a,Grand-Est,Haut-Rhin,Inconnu,4,1983,155865,Inconnu
+2020,H1a,Nouvelle-Aquitaine,Charente-Maritime,Inconnu,3,9200,1190474,Inconnu
+2020,H1a,Nouvelle-Aquitaine,Gironde,Inconnu,7,13836,644420,Inconnu
+2020,H1a,Nouvelle-Aquitaine,Pyrénées-Atlantiques,Inconnu,4,4874,615456,Inconnu
+2020,H1a,Nouvelle-Aquitaine,Deux-Sèvres,Inconnu,3,532,38916,Inconnu
+2020,H1a,Auvergne-Rhône-Alpes,Isère,Inconnu,6,8309,964034,Inconnu
+2020,H1b,Hauts-de-France,Nord,Inconnu,4,2654,301197,Inconnu
+2020,H1b,Occitanie,Tarn,Inconnu,3,5629,627020,Inconnu
+2020,H1c,Île-de-France,Yvelines,Inconnu,4,4386,1248107,Inconnu
+2020,H1c,Île-de-France,Essonne,Inconnu,3,896,138241,Inconnu
+2020,H1c,Île-de-France,Val-de-Marne,Inconnu,3,361,49560,Inconnu
+2020,H1c,Centre-Val de Loire,Indre-et-Loire,Inconnu,6,9652,1259570,Inconnu
+2020,H1c,Centre-Val de Loire,Loiret,Inconnu,3,12080,1634598,Inconnu
+2020,H1c,Grand-Est,Haute-Marne,Inconnu,3,506,36782,Inconnu
+2020,H1c,Auvergne-Rhône-Alpes,Ardèche,Inconnu,4,7221,730088,Inconnu
+2020,H1c,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,Inconnu,6,5590,176134,Inconnu
+2020,H1c,Provence-Alpes-Côte d'Azur,Var,Inconnu,5,8521,288979,Inconnu
+2020,H2a,Normandie,Calvados,Inconnu,3,14064,3166474,Inconnu
+2020,H2a,Pays de la Loire,Loire-Atlantique,Inconnu,5,14115,3286151,Inconnu
+2020,H2b,Île-de-France,Yvelines,Inconnu,5,15423,1402827,Inconnu
+2020,H2b,Centre-Val de Loire,Loiret,Inconnu,4,9349,2752327,Inconnu
+2020,H2b,Bretagne,Finistère,Inconnu,3,15145,3517301,Inconnu
+2020,H2b,Nouvelle-Aquitaine,Gironde,Inconnu,5,17399,360689,Inconnu
+2020,H2b,Nouvelle-Aquitaine,Pyrénées-Atlantiques,Inconnu,3,5905,1265051,Inconnu
+2020,H2b,Nouvelle-Aquitaine,Haute-Vienne,Inconnu,7,11305,2091781,Inconnu
+2020,H2c,Bretagne,Ille-et-Vilaine,Inconnu,5,9585,1867098,Inconnu
+2020,H2d,Île-de-France,Seine-et-Marne,Inconnu,3,5307,585072,Inconnu
+2020,H2d,Île-de-France,Hauts-de-Seine,Inconnu,4,49835,3421113,Inconnu
+2020,H2d,Nouvelle-Aquitaine,Landes,Inconnu,6,12022,1856015,Inconnu
+2020,H2d,Auvergne-Rhône-Alpes,Haute-Loire,Inconnu,3,3931,935748,Inconnu
+2020,H2d,Auvergne-Rhône-Alpes,Puy-de-Dôme,Inconnu,3,4480,523708,Inconnu
+2020,H3,Hauts-de-France,Oise,Inconnu,10,27518,4204187,Inconnu
+2020,H3,Occitanie,Haute-Garonne,Inconnu,9,17946,1196148,Inconnu
+2020,H3,Auvergne-Rhône-Alpes,Allier,Inconnu,3,2667,587820,Inconnu
+2020,MAY,Mayotte,Mayotte,Inconnu,14,84856,2762142,Inconnu
+2021,H1a,Centre-Val de Loire,Cher,Inconnu,3,8124,705099,Inconnu
+2021,H1a,Centre-Val de Loire,Loiret,Inconnu,5,35242,5745708,Inconnu
+2021,H1a,Bourgogne-Franche-Comté,Saône-et-Loire,Inconnu,3,8834,1553496,Inconnu
+2021,H1a,Bourgogne-Franche-Comté,Yonne,Inconnu,3,4900,951664,Inconnu
+2021,H1a,Normandie,Manche,Inconnu,5,18196,2746045,Inconnu
+2021,H1a,Grand-Est,Bas-Rhin,Inconnu,4,2380,341201,Inconnu
+2021,H1a,Nouvelle-Aquitaine,Charente-Maritime,Inconnu,3,9200,1264047,Inconnu
+2021,H1a,Nouvelle-Aquitaine,Pyrénées-Atlantiques,Inconnu,4,4874,599762,Inconnu
+2021,H1a,Nouvelle-Aquitaine,Deux-Sèvres,Inconnu,3,532,36192,Inconnu
+2021,H1a,Auvergne-Rhône-Alpes,Isère,Inconnu,6,8309,885650,Inconnu
+2021,H1a,Auvergne-Rhône-Alpes,Haute-Savoie,Inconnu,3,2986,410760,Inconnu
+2021,H1b,Centre-Val de Loire,Loir-et-Cher,Inconnu,3,32077,2726504,Inconnu
+2021,H1b,Hauts-de-France,Nord,Inconnu,4,2654,312027,Inconnu
+2021,H1b,Occitanie,Tarn,Inconnu,3,5629,688074,Inconnu
+2021,H1c,Île-de-France,Seine-et-Marne,Inconnu,3,274,30618,Inconnu
+2021,H1c,Île-de-France,Yvelines,Inconnu,4,4386,1373712,Inconnu
+2021,H1c,Île-de-France,Essonne,Inconnu,4,1397,174650,Inconnu
+2021,H1c,Île-de-France,Val-de-Marne,Inconnu,3,356,129667,Inconnu
+2021,H1c,Hauts-de-France,Pas-de-Calais,Inconnu,4,3397,157455,Inconnu
+2021,H1c,Pays de la Loire,Loire-Atlantique,Inconnu,4,8464,338633,Inconnu
+2021,H1c,Nouvelle-Aquitaine,Charente,Inconnu,3,17457,1757617,Inconnu
+2021,H1c,Nouvelle-Aquitaine,Gironde,Inconnu,4,6970,183664,Inconnu
+2021,H1c,Auvergne-Rhône-Alpes,Ardèche,Inconnu,5,8380,1049749,Inconnu
+2021,H1c,Provence-Alpes-Côte d'Azur,Alpes-de-Haute-Provence,Inconnu,4,7342,905599,Inconnu
+2021,H1c,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,Inconnu,7,9151,372072,Inconnu
+2021,H1c,Provence-Alpes-Côte d'Azur,Var,Inconnu,5,8521,302417,Inconnu
+2021,H2a,Pays de la Loire,Loire-Atlantique,Inconnu,4,6880,1850998,Inconnu
+2021,H2b,Centre-Val de Loire,Loiret,Inconnu,4,9349,2925105,Inconnu
+2021,H2b,Hauts-de-France,Nord,Inconnu,3,3122,128948,Inconnu
+2021,H2b,Bretagne,Finistère,Inconnu,3,15145,3870341,Inconnu
+2021,H2b,Nouvelle-Aquitaine,Gironde,Inconnu,5,12157,312099,Inconnu
+2021,H2b,Nouvelle-Aquitaine,Pyrénées-Atlantiques,Inconnu,3,5905,1301123,Inconnu
+2021,H2b,Nouvelle-Aquitaine,Haute-Vienne,Inconnu,7,11305,2214916,Inconnu
+2021,H2c,Hauts-de-France,Nord,Inconnu,4,3426,96251,Inconnu
+2021,H2c,Bretagne,Ille-et-Vilaine,Inconnu,3,9201,2893155,Inconnu
+2021,H2c,Nouvelle-Aquitaine,Charente-Maritime,Inconnu,3,3935,164438,Inconnu
+2021,H2c,Occitanie,Pyrénées-Orientales,Inconnu,4,10887,1012858,Inconnu
+2021,H2d,Île-de-France,Seine-et-Marne,Inconnu,3,5307,559119,Inconnu
+2021,H2d,Île-de-France,Hauts-de-Seine,Inconnu,4,49835,3676368,Inconnu
+2021,H2d,Nouvelle-Aquitaine,Landes,Inconnu,6,12022,2066527,Inconnu
+2021,H2d,Auvergne-Rhône-Alpes,Haute-Loire,Inconnu,3,3931,1024922,Inconnu
+2021,H2d,Auvergne-Rhône-Alpes,Puy-de-Dôme,Inconnu,3,4480,600915,Inconnu
+2021,H3,Hauts-de-France,Oise,Inconnu,8,16848,3285963,Inconnu
+2021,H3,Auvergne-Rhône-Alpes,Ain,Inconnu,3,2674,459132,Inconnu
+2021,MAY,Mayotte,Mayotte,Inconnu,8,33205,950552,Inconnu
+2022,H1a,Nouvelle-Aquitaine,Gironde,Inconnu,5,8670,676770,Inconnu
+2022,H1a,Auvergne-Rhône-Alpes,Ain,Inconnu,5,12279,878182,Inconnu
+2022,H1a,Auvergne-Rhône-Alpes,Haute-Savoie,Inconnu,3,966,80939,Inconnu
+2022,H1a,Provence-Alpes-Côte d'Azur,Var,Inconnu,4,7061,401427,Inconnu
+2022,H1b,Hauts-de-France,Nord,Inconnu,3,2386,137236,Inconnu
+2022,H1b,Bretagne,Ille-et-Vilaine,Inconnu,4,971,90130,Inconnu
+2022,H1b,Occitanie,Tarn,Inconnu,3,4733,1257302,Inconnu
+2022,H1c,Île-de-France,Essonne,Inconnu,3,1449,92744,Inconnu
+2022,H1c,Normandie,Seine-Maritime,Inconnu,3,369,56519,Inconnu
+2022,H1c,Hauts-de-France,Nord,Inconnu,3,2175,96768,Inconnu
+2022,H1c,Hauts-de-France,Pas-de-Calais,Inconnu,5,4851,256780,Inconnu
+2022,H1c,Pays de la Loire,Loire-Atlantique,Inconnu,5,8125,261300,Inconnu
+2022,H1c,Auvergne-Rhône-Alpes,Drôme,Inconnu,8,15383,1671104,Inconnu
+2022,H1c,Provence-Alpes-Côte d'Azur,Alpes-de-Haute-Provence,Inconnu,6,7789,2620829,Inconnu
+2022,H1c,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,Inconnu,15,18889,993250,Inconnu
+2022,H1c,Provence-Alpes-Côte d'Azur,Var,Inconnu,4,8692,400819,Inconnu
+2022,H2b,Île-de-France,Yvelines,Inconnu,4,15046,3093955,Inconnu
+2022,H2b,Hauts-de-France,Nord,Inconnu,3,3122,81526,Inconnu
+2022,H2b,Bretagne,Finistère,Inconnu,3,14477,4438195,Inconnu
+2022,H2b,Nouvelle-Aquitaine,Gironde,Inconnu,4,11334,487792,Inconnu
+2022,H2b,Nouvelle-Aquitaine,Pyrénées-Atlantiques,Inconnu,3,5812,1833066,Inconnu
+2022,H2b,Provence-Alpes-Côte d'Azur,Bouches-du-Rhône,Inconnu,3,759,186084,Inconnu
+2022,H2c,Hauts-de-France,Nord,Inconnu,3,3109,68147,Inconnu
+2022,H2c,Auvergne-Rhône-Alpes,Rhône,Inconnu,4,5353,409565,Inconnu
+2022,H2d,Nouvelle-Aquitaine,Landes,Inconnu,5,10212,1626180,Inconnu
+2022,H2d,Occitanie,Gard,Inconnu,3,2244,83325,Inconnu
+2022,H3,Île-de-France,Hauts-de-Seine,Inconnu,6,6243,229875,Inconnu
+2022,MAY,Mayotte,Mayotte,Inconnu,13,63290,2650369,Inconnu
