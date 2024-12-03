@@ -3,7 +3,7 @@ from unittest.mock import MagicMock
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
-from database.database import db
+from _backend.api.database import db
 
 from App import app
 
