@@ -139,3 +139,30 @@ if selected_table and not table_data.empty:
     st.dataframe(paginated_data, use_container_width=True)
 else:
     st.warning("🚫 Pas de données à afficher pour la table sélectionnée.")
+
+
+
+
+
+#main.py
+
+ # Vérifier si 'year' est une colonne dans les données
+if 'year' in filters.columns:
+            # Diagramme linéaire des tendances de consommation d'énergie par année
+            fig = px.line(
+                filters[filters['year'] == int(filters['annee_consommation'])] if filters['annee_consommation'] != 'Année de référence' else filters,
+                x='month',
+                y='consumption',
+                title=f"Tendances de consommation pour l'année {filters['annee_consommation']}"
+            )
+            st.plotly_chart(fig, use_container_width=True)
+else:
+            st.warning("🚫 Pas de données disponibles pour l'année sélectionnée")
+
+        # Créer un diagramme en barres pour la consommation totale par vecteurs d'énergie
+if 'vecteur_energie' in filters.columns and 'consumption' in filters.columns:
+            total_consumption = filters.groupby('vecteur_energie')['consumption'].sum().reset_index()
+            bar_fig = px.bar(total_consumption, x='vecteur_energie', y='consumption', title="Consommation totale par vecteur d'énergie")
+            st.plotly_chart(bar_fig, use_container_width=True)
+else:
+            st.warning("🚫 Les colonnes 'vecteur_energie' et 'consumption' sont manquantes dans les données")
