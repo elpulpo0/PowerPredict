@@ -62,3 +62,76 @@
 2024-12-04 12:18:40 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
 2024-12-04 12:20:59 | INFO | Vérification de l'état de santé de l'API.
 2024-12-04 12:20:59 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:14:39 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:14:39 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:17:51 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:17:51 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:17:51 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:17:51 | INFO | Résultat du modèle : Model A, Prédiction : 1500.00 kWh
+2024-12-04 13:17:51 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:17:51 | INFO | Résultat du modèle : Model A, Prédiction : 1500.00 kWh
+2024-12-04 13:17:51 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:17:51 | INFO | Résultat du modèle : Model A, Prédiction : 1500.00 kWh
+2024-12-04 13:21:23 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:21:23 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:21:23 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:21:23 | ERROR | Erreur lors de la prédiction : unsupported format string passed to NoneType.__format__
+2024-12-04 13:21:23 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:21:23 | ERROR | Erreur lors de la prédiction : unsupported format string passed to NoneType.__format__
+2024-12-04 13:21:23 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:21:23 | ERROR | Erreur lors de la prédiction : unsupported format string passed to NoneType.__format__
+2024-12-04 13:22:19 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:22:19 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:22:19 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:22:19 | ERROR | Erreur lors de la prédiction : unsupported format string passed to NoneType.__format__
+2024-12-04 13:22:19 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:22:19 | ERROR | Erreur lors de la prédiction : unsupported format string passed to NoneType.__format__
+2024-12-04 13:22:19 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:22:19 | ERROR | Erreur lors de la prédiction : unsupported format string passed to NoneType.__format__
+2024-12-04 13:24:03 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:24:03 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:24:03 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:24:03 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:24:03 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:24:03 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:24:03 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:24:03 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:25:49 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:25:49 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:25:49 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:25:49 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:25:49 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:25:49 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:25:49 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:25:49 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:26:53 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:26:53 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:26:53 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:26:53 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:26:53 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:26:53 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:26:53 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:26:53 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:29:53 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:29:53 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:29:53 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:29:53 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:29:53 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:29:53 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:29:53 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:29:53 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:31:56 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:31:56 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:31:56 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:31:56 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:31:56 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:31:56 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:31:56 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:31:56 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:36:27 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:36:27 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:36:27 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:36:27 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:36:27 | ERROR | Erreur dans la prédiction: Localisation invalide.
+2024-12-04 13:36:27 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:36:27 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh

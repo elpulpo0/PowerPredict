@@ -4,7 +4,6 @@ from .model import model
 from loguru import logger
 from .api_config import responses_predict
 
-
 router = APIRouter()
 
 @router.get(
@@ -20,6 +19,8 @@ async def predict(filters: PredictionFilters = Depends()):
     try:
         # Récupérer les coordonnées GPS de la localisation spécifiée dans le filtre
         latitude, longitude = model.get_coordinates(filters.location_name)
+        
+        # Vérification de la validité des coordonnées
         if latitude is None or longitude is None:
             raise HTTPException(status_code=400, detail="Localisation invalide.")
 
@@ -39,6 +40,10 @@ async def predict(filters: PredictionFilters = Depends()):
         best_model = prediction_result.get("best_model")
         best_prediction = prediction_result.get("best_prediction")
 
+        # Vérifier si la prédiction est None et lui attribuer une valeur par défaut
+        if best_prediction is None:
+            best_prediction = 0.0  # Valeur par défaut si la prédiction est None
+
         # Loguer les données utilisées pour la prédiction
         logger.info(
             f"Prédiction réalisée avec les données : "
@@ -57,7 +62,11 @@ async def predict(filters: PredictionFilters = Depends()):
             "Prédiction (kWh)": f"{best_prediction:,.2f}"
         }
 
+    except HTTPException as e:
+        # Gestion des erreurs avec un retour HTTP approprié
+        logger.error(f"Erreur dans la prédiction: {e.detail}")
+        raise e
 
     except Exception as e:
-        logger.error("Erreur lors de la prédiction : {}", e)
+        logger.error(f"Erreur lors de la prédiction : {str(e)}")
         raise HTTPException(status_code=500, detail="Erreur serveur.")
