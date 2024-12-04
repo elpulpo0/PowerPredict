@@ -135,3 +135,17 @@
 2024-12-04 13:36:27 | ERROR | Erreur dans la prédiction: Localisation invalide.
 2024-12-04 13:36:27 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
 2024-12-04 13:36:27 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:49:28 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:49:29 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:49:29 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:49:29 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:49:29 | ERROR | Erreur dans la prédiction: Localisation invalide.
+2024-12-04 13:49:29 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:49:29 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:51:21 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 13:51:21 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 13:51:21 | INFO | Prédiction réalisée avec les données : surface_declaree: 200.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: electricite, annee_consommation: 2020
+2024-12-04 13:51:21 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 13:51:21 | ERROR | Erreur dans la prédiction: Localisation invalide.
+2024-12-04 13:51:21 | INFO | Prédiction réalisée avec les données : surface_declaree: 150.0, latitude: 48.8566, longitude: 2.3522, vecteur_energie: None, annee_consommation: None
+2024-12-04 13:51:21 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
