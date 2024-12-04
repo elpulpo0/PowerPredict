@@ -58,3 +58,5 @@
 2024-12-04 12:06:36 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
 2024-12-04 12:07:50 | INFO | Vérification de l'état de santé de l'API.
 2024-12-04 12:07:50 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 12:18:40 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 12:18:40 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
