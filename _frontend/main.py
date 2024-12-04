@@ -1,99 +1,109 @@
 import streamlit as st
 import pandas as pd
-import sqlite3
-from pathlib import Path
-from streamlit import connection
+import plotly.express as px
+import requests
 
-
-database_path = Path(__file__).parent / "_backend/database/database.db" #en attendant de trouver le bon chemin
-                                  
-
-#streamlit frontend apparence
+# Configuration de la page
 st.set_page_config(
-    page_title="SQLite DB Viewer",
+    page_title="PowerPredict",
     page_icon="📊",
     layout="wide",
-    initial_sidebar_state="expanded",
 )
 
-#CSS apparence file style.css a la racine main
-#file fonctions.py 
-st.markdown(
-    """
-    <style>
-    .main{
-        background-color: #f5f5f5;
-    }
-    .sidebar .sidebar-content{
-    background: linear-gradient(45deg, #6b9ac4, #abdcff);
-    color: white;
-    }
-    st-df table {
-    margin-top:20px;
-    font-size: 14px;
-    border-collapse; collapse;
-    width: 100%;
-    }
-    .st-df th {
-    background-color: 4cAF50;
-    color: white
-    padding: 10px;
-    text-align: center;
+# Titres de la page
+st.title("📊 PowerPredict")
+st.write("Analyse et prédiction de la consommation énergétique.")
 
-    }
-</style>
-""",
-unsafe_allow_html=True,
-)
+# URL de l'API
+API_BASE_URL = " https://powerpredict.onrender.com"
 
-if not Path(database_path).exists():
-    st.error("🚨 Le chemin vers le fichier de base de données n'est pas correct")
-else:
-    conn = sqlite3.connect(database_path)
-    st.title("📊 PowerPredict")
+# Bloc 1 : Visualisation des données
+st.header("🔍 Visualisation des données")
+with st.form(key="data_form"):
+    st.sidebar.subheader("Filtres")
+    annee_consommation = st.sidebar.selectbox("Année de consommation", ["2020", "2021", "2022", "Année de référence"])
+    vecteur_energie = st.sidebar.text_input("Vecteur énergétique")
+    zone_climatique = st.sidebar.text_input("Zone Climatique")
+    commune = st.sidebar.text_input("Nom de la commune")
+    departement = st.sidebar.text_input("Nom du département")
+    region = st.sidebar.text_input("Nom de la région")
+    consommation_etat = st.sidebar.text_input("Etat consommation")
 
-    #Fetch toutes les tables dans la base de données
-    @st.cache
-    def get_table_names(connection):
-        query = "SELECT name FROM sqlite_master WHERE type='table';"
-        return pd.read_sql_query(query, connection)
+    # Filtrer les données
+    data_submit = st.form_submit_button("📥 Charger les données")
+    if data_submit:
+        with st.spinner("Chargement des données..."):
+            filters = {
+                "annee_consommation": annee_consommation,
+                "vecteur_energie": vecteur_energie,
+                "zone_climatique": zone_climatique,
+                "commune": commune,
+                "departement": departement,
+                "region": region,
+                "consommation_etat": consommation_etat,
+            }
+            valid_filters = {key: value for key, value in filters.items() if value}
+            try:
+                response = requests.get(f"{API_BASE_URL}/data", params=valid_filters)
+                if response.status_code == 200:
+                    data = response.json()["data"]
+                    st.success("✅ Données récupérées avec succès!")
+                    df = pd.DataFrame(data)
+
+                    # Affichage du tableau de données
+                    st.dataframe(df)
+
+                    # Affichage graphique des consommations
+                    if "nom_commune" in df.columns and "consommation_declaree" in df.columns:
+                        fig = px.bar(
+                            df,
+                            x="nom_commune",
+                            y="consommation_declaree",
+                            color="consommation_declaree",
+                            title="Consommation par commune",
+                            labels={"nom_commune": "Commune", "consommation_declaree": "Consommation (kWh)"},
+                        )
+                        st.plotly_chart(fig)
+                else:
+                    st.error(f"🚨 Erreur: {response.json().get('detail', 'Impossible de récupérer les données.')}")
+            except Exception as e:
+                st.error(f"🚨 Une erreur est survenue : {e}")
+
+# Bloc 2 : Prédictions
+st.header("📈 Prédictions de consommation")
+with st.form(key="predict_form"):
+    st.sidebar.subheader("Données de prédiction")
+    surface_declaree = st.sidebar.number_input("Surface déclarée (m²)", min_value=1, step=1)
+    commune = st.sidebar.text_input("Commune")
+    annee_consommation = st.sidebar.selectbox("Année de consommation", ["2020", "2021", "2022"])
+    vecteur_energie = st.sidebar.text_input("Vecteur énergétique", value="Électricité")
     
-    try:
-        table_names = get_table_names(conn)
-    except Exception as e:
-        st.error(f"le nom des tables est introuvable: {e}")
-        table_names = []
+    # Bouton de soumission
+    predict_submit = st.form_submit_button("🔮 Prédire")
+    if predict_submit:
+        with st.spinner("Calcul de la prédiction..."):
+            # Préparation des données au format attendu par l'API
+            prediction_input = {
+                "surface_declaree": surface_declaree,
+                "location_name": commune,
+                "annee_consommation": annee_consommation,
+                "vecteur_energie": vecteur_energie or "Électricité",
+            }
 
-    if table_names:
-        #selection de la table
-        selected_table = st.sidebar.radio("selectionner une table", table_names, key="table_selection")
-
-        @st.cache
-        def fetch_table_data(connection, table_name):
-        query = f"SELECT * FROM {table_name};" # type: ignore #query toute data mais table_name pas defini
-        return pd.read_sql_query(query, connection)
-    
-    try:
-        table_data = fetch_table_data(conn, selected_table) # type: ignore
-        st.subheader(f"📋 Donnees de la table": {selected_table})
-        st.dataframe(table_data.style.set_properties(**{
-            "background-color": "fdfdfd",
-            "color": "333333",
-            "border": "1px solid #ddd",
-        }),
-        use_container_width=True, #width de table
-        )
-    except Exception as e:
-        st.error(f"erreur a la recuperation des donnees de la table '{selected_table'}: {e}") # type: ignore 
-                                                                      
-    else:
-        st.warning("⛔️ aucune table n'est selectionnee")
-
-with st.sidebar:
-    st.markdown("### A propos")
-    st.info("utilisez cet outils pour explorer les tables dans la base de donnees. selectionnez une table")
-    st.markdown("### Notes")
-    st.write(" 💾 verifiez que le fichier est bien dans le bon chemin")
-
-#fermer la connexion a la database
-conn.close()
+            try:
+                # Appel à l'API pour effectuer la prédiction
+                response = requests.get(f"{API_BASE_URL}/predict", params=prediction_input)
+                
+                if response.status_code == 200:
+                    prediction = response.json()
+                    st.success("✅ Prédiction effectuée avec succès!")
+                    
+                    # Affichage des résultats
+                    st.write(f"### Modèle utilisé : **{prediction['Modèle utilisé']}**")
+                    st.write(f"### Consommation estimée : **{prediction['Prédiction (kWh)']} kWh**")
+                else:
+                    # Gestion des erreurs API
+                    st.error(f"🚨 Erreur: {response.json().get('detail', 'Impossible d’effectuer la prédiction.')}")
+            
+            except Exception as e:
+                st.error(f"🚨 Une erreur est survenue : {e}")

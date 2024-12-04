@@ -1,0 +1,39 @@
+body{
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    color: 333333;
+}
+
+/*sidebar style*/
+.sidebar .sidebar-content{
+    background: linear-gradient(45deg, #6b9ac4, #abdcff);
+    color: white;
+}
+
+/*table headers style*/
+.st-df th {
+    background-color: #4CAF50;
+    color: white;
+    text-align:center;
+    padding: 10px;
+}
+
+
+/*cellules table style*/
+.st-df td {
+    background-color: #ffffff; /* Remove the extra colon */
+    color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/*titles*/
+h1, h2, h3 {
+    color:#4CAF50;
+}
+
+/*Liens*/
+a{
+    color: #6b9ac4;
+    text-decoration: none;
+}
