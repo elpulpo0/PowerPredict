@@ -39,7 +39,7 @@ def test_table_presence(db_connection):
 # Test 3 : Vérifier la structure des colonnes pour chaque table
 @pytest.mark.parametrize("table_name, expected_columns", [
     ("consommation", ["id_consommation", "annee_consommation", "surface_declaree", "nombre_declaration",
-                      "consommation_declaree", "densite_energetique", "ratio_declaration_consommation",
+                      "consommation_declaree", "densite_energetique",
                       "consommation_log", "consommation_etat", "id_zone_climatique", "id_vecteur_energie", "id_commune"]),
     ("commune", ["id_commune", "nom_commune", "id_departement"]),
     ("departement", ["id_departement", "nom_departement", "id_region"]),

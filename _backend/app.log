@@ -36,3 +36,25 @@
 2024-12-03 22:16:01 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
 2024-12-03 22:17:42 | INFO | Prédiction réalisée avec les données : surface_declaree: 45678.0, latitude: 43.7009358, longitude: 7.2683912, vecteur_energie: None, annee_consommation: None
 2024-12-03 22:17:42 | INFO | Résultat du modèle : Gradient Boosting, Prédiction : 7265166.68 kWh
+2024-12-04 11:45:38 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 11:45:38 | ERROR | Erreur SQLite : near ".": syntax error
+2024-12-04 11:45:38 | WARNING | Aucune donnée trouvée pour les critères fournis.
+2024-12-04 11:47:21 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 11:47:21 | ERROR | Erreur SQLite : near ".": syntax error
+2024-12-04 11:47:21 | WARNING | Aucune donnée trouvée pour les critères fournis.
+2024-12-04 11:52:20 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 11:52:20 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 12:00:36 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 12:00:36 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 12:02:55 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 12:02:55 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 12:04:35 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 12:04:35 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 12:05:03 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 12:05:03 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 12:05:39 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 12:05:39 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 12:06:36 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 12:06:36 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}
+2024-12-04 12:07:50 | INFO | Vérification de l'état de santé de l'API.
+2024-12-04 12:07:50 | INFO | PowerPredict db called with filters: {'annee_consommation': '2020', 'vecteur_energie': 'electricite', 'nom_commune': 'toulouse'}

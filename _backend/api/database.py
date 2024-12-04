@@ -25,10 +25,10 @@ class Database:
                     consommation.nombre_declaration,
                     consommation.consommation_declaree,
                     consommation.densite_energetique,
-                    consommation.latitude
-                    consommation.longitude
-                    consommation.consommation_log
-                    consommation.consommation_etat
+                    consommation.latitude,
+                    consommation.longitude,
+                    consommation.consommation_log,
+                    consommation.consommation_etat,
                     commune.nom_commune,
                     departement.nom_departement,
                     region.nom_region,
