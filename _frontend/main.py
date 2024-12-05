@@ -42,7 +42,7 @@ with st.spinner("Vérification de l'API..."):
 st.header("🔍 Visualisation des données")
 with st.form(key="data_form"):
     st.sidebar.subheader("Filtres")
-    annee_consommation = st.sidebar.selectbox("Année de consommation", ["2020", "2021", "2022", "Année de référence"])
+    annee_consommation = st.sidebar.selectbox("Année de consommation", ["2020", "2021", "2022"])
     vecteur_energie = st.sidebar.text_input("Vecteur énergétique")
     zone_climatique = st.sidebar.text_input("Zone Climatique")
     commune = st.sidebar.text_input("Nom de la commune")
@@ -96,8 +96,8 @@ with st.form(key="predict_form"):
     st.sidebar.subheader("Données de prédiction")
     surface_declaree = st.sidebar.number_input("Surface déclarée (m²)", min_value=1, step=1)
     commune = st.sidebar.text_input("Commune")
-    annee_consommation = st.sidebar.selectbox("Année de consommation", ["2020", "2021", "2022"])
-    vecteur_energie = st.sidebar.text_input("Vecteur énergétique", value="Électricité")
+    annee_consommation = st.sidebar.text_input("Année de consommation")
+    vecteur_energie = st.sidebar.text_input("Vecteur énergétique (Fioul, électricité ou gaz)")
 
     # Bouton de soumission
     predict_submit = st.form_submit_button("🔮 Prédire")
@@ -108,7 +108,7 @@ with st.form(key="predict_form"):
                 "surface_declaree": surface_declaree,
                 "location_name": commune,
                 "annee_consommation": annee_consommation,
-                "vecteur_energie": vecteur_energie or "Électricité",
+                "vecteur_energie": vecteur_energie,
             }
 
             try:
