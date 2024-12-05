@@ -10,12 +10,33 @@ st.set_page_config(
     layout="wide",
 )
 
+# Fonction pour vérifier la santé de l'API
+def check_api_health():
+    try:
+        response = requests.get(f"{API_BASE_URL}/health")
+        if response.status_code == 200:
+            return "OK"
+        else:
+            return f"Erreur: {response.status_code}"
+    except Exception as e:
+        return f"Erreur: {e}"
+
 # Titres de la page
 st.title("📊 PowerPredict")
 st.write("Analyse et prédiction de la consommation énergétique.")
 
 # URL de l'API
-API_BASE_URL = " https://powerpredict.onrender.com"
+API_BASE_URL = "https://powerpredict.onrender.com"
+
+# Bouton "Réveiller l'API"
+with st.spinner("Vérification de l'API..."):
+    if st.button("🔄 Réveiller l'API"):
+        with st.spinner("En attente de la réponse de l'API..."):
+            health_status = check_api_health()
+        if health_status == "OK":
+            st.success("✅ API réveillée avec succès!")
+        else:
+            st.error(f"🚨 Problème avec l'API: {health_status}")
 
 # Bloc 1 : Visualisation des données
 st.header("🔍 Visualisation des données")
@@ -77,7 +98,7 @@ with st.form(key="predict_form"):
     commune = st.sidebar.text_input("Commune")
     annee_consommation = st.sidebar.selectbox("Année de consommation", ["2020", "2021", "2022"])
     vecteur_energie = st.sidebar.text_input("Vecteur énergétique", value="Électricité")
-    
+
     # Bouton de soumission
     predict_submit = st.form_submit_button("🔮 Prédire")
     if predict_submit:
@@ -93,17 +114,17 @@ with st.form(key="predict_form"):
             try:
                 # Appel à l'API pour effectuer la prédiction
                 response = requests.get(f"{API_BASE_URL}/predict", params=prediction_input)
-                
+
                 if response.status_code == 200:
                     prediction = response.json()
                     st.success("✅ Prédiction effectuée avec succès!")
-                    
+
                     # Affichage des résultats
                     st.write(f"### Modèle utilisé : **{prediction['Modèle utilisé']}**")
                     st.write(f"### Consommation estimée : **{prediction['Prédiction (kWh)']} kWh**")
                 else:
                     # Gestion des erreurs API
                     st.error(f"🚨 Erreur: {response.json().get('detail', 'Impossible d’effectuer la prédiction.')}")
-            
+
             except Exception as e:
                 st.error(f"🚨 Une erreur est survenue : {e}")
