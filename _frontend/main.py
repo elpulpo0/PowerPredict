@@ -30,7 +30,7 @@ st.title("\U0001F4CA PowerPredict")
 st.write("Analyse et prédiction de la consommation énergétique.")
 
 # Hero section
-st.image("assets/powerpredict.jpg", caption="Optimisez votre consommation énergétique grâce à des prédictions précises.", use_container_width=True)
+st.image("https://hvacrcareerconnectny.com/wp-content/uploads/2022/06/Shutterstock_1936882618-1-1200x400.jpg?text=Bienvenue+sur+PowerPredict", caption="Optimisez votre consommation énergétique grâce à des prédictions précises.", use_container_width=True)
 
 # Bouton "Réveiller l'API"
 if st.button("\U0001F501 Réveiller l'API"):
