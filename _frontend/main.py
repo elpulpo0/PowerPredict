@@ -6,8 +6,9 @@ import requests
 # Configuration de la page
 st.set_page_config(
     page_title="PowerPredict",
-    page_icon="📊",
+    page_icon="\U0001F4CA",
     layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 # Fonction pour vérifier la santé de l'API
@@ -21,37 +22,46 @@ def check_api_health():
     except Exception as e:
         return f"Erreur: {e}"
 
-# Titres de la page
-st.title("📊 PowerPredict")
-st.write("Analyse et prédiction de la consommation énergétique.")
-
 # URL de l'API
 API_BASE_URL = "https://powerpredict.onrender.com"
 
+# Titre principal
+st.title("\U0001F4CA PowerPredict")
+st.write("Analyse et prédiction de la consommation énergétique.")
+
+# Hero section
+st.image("assets/powerpredict.jpg", caption="Optimisez votre consommation énergétique grâce à des prédictions précises.", use_container_width=True)
+
 # Bouton "Réveiller l'API"
-with st.spinner("Vérification de l'API..."):
-    if st.button("🔄 Réveiller l'API"):
-        with st.spinner("En attente de la réponse de l'API..."):
-            health_status = check_api_health()
-        if health_status == "OK":
-            st.success("✅ API réveillée avec succès!")
-        else:
-            st.error(f"🚨 Problème avec l'API: {health_status}")
+if st.button("\U0001F501 Réveiller l'API"):
+    with st.spinner("Réveil et vérification de l'API en cours..."):
+        health_status = check_api_health()
+    if health_status == "OK":
+        st.success("✅ API réveillée avec succès!")
+    else:
+        st.error(f"🚨 Problème avec l'API: {health_status}")
 
 # Bloc 1 : Visualisation des données
 st.header("🔍 Visualisation des données")
 with st.form(key="data_form"):
-    st.sidebar.subheader("Filtres")
-    annee_consommation = st.sidebar.selectbox("Année de consommation", ["2020", "2021", "2022"])
-    vecteur_energie = st.sidebar.text_input("Vecteur énergétique")
-    zone_climatique = st.sidebar.text_input("Zone Climatique")
-    commune = st.sidebar.text_input("Nom de la commune")
-    departement = st.sidebar.text_input("Nom du département")
-    region = st.sidebar.text_input("Nom de la région")
-    consommation_etat = st.sidebar.text_input("Etat consommation")
+    col1, col2, col3 = st.columns(3)
 
-    # Filtrer les données
+    with col1:
+        annee_consommation = st.selectbox("Année de consommation", ["2020", "2021", "2022"], key="annee")
+        vecteur_energie = st.text_input("Vecteur énergétique", key="vecteur")
+    
+    with col2:
+        zone_climatique = st.text_input("Zone Climatique", key="zone")
+        commune = st.text_input("Nom de la commune", key="commune")
+
+    with col3:
+        departement = st.text_input("Nom du département", key="departement")
+        region = st.text_input("Nom de la région", key="region")
+        consommation_etat = st.text_input("Etat consommation", key="etat")
+
+    # Bouton de soumission des filtres
     data_submit = st.form_submit_button("📥 Charger les données")
+
     if data_submit:
         with st.spinner("Chargement des données..."):
             filters = {
@@ -64,6 +74,7 @@ with st.form(key="data_form"):
                 "consommation_etat": consommation_etat,
             }
             valid_filters = {key: value for key, value in filters.items() if value}
+
             try:
                 response = requests.get(f"{API_BASE_URL}/data", params=valid_filters)
                 if response.status_code == 200:
@@ -83,6 +94,7 @@ with st.form(key="data_form"):
                             color="consommation_declaree",
                             title="Consommation par commune",
                             labels={"nom_commune": "Commune", "consommation_declaree": "Consommation (kWh)"},
+                            template="plotly_white",
                         )
                         st.plotly_chart(fig)
                 else:
@@ -93,14 +105,19 @@ with st.form(key="data_form"):
 # Bloc 2 : Prédictions
 st.header("📈 Prédictions de consommation")
 with st.form(key="predict_form"):
-    st.sidebar.subheader("Données de prédiction")
-    surface_declaree = st.sidebar.number_input("Surface déclarée (m²)", min_value=1, step=1)
-    commune = st.sidebar.text_input("Commune")
-    annee_consommation = st.sidebar.text_input("Année de consommation")
-    vecteur_energie = st.sidebar.text_input("Vecteur énergétique (Fioul, électricité ou gaz)")
+    col1, col2 = st.columns(2)
 
-    # Bouton de soumission
+    with col1:
+        surface_declaree = st.number_input("Surface déclarée (m²)", min_value=1, step=1, key="surface")
+        commune = st.text_input("Commune", key="predict_commune")
+
+    with col2:
+        annee_consommation = st.text_input("Année de consommation", key="predict_annee")
+        vecteur_energie = st.text_input("Vecteur énergétique (Fioul, électricité ou gaz)", key="predict_vecteur")
+
+    # Bouton de soumission pour la prédiction
     predict_submit = st.form_submit_button("🔮 Prédire")
+
     if predict_submit:
         with st.spinner("Calcul de la prédiction..."):
             # Préparation des données au format attendu par l'API
@@ -120,8 +137,7 @@ with st.form(key="predict_form"):
                     st.success("✅ Prédiction effectuée avec succès!")
 
                     # Affichage des résultats
-                    st.write(f"### Modèle utilisé : **{prediction['Modèle utilisé']}**")
-                    st.write(f"### Consommation estimée : **{prediction['Prédiction (kWh)']} kWh**")
+                    st.write(f"Le modèle **{prediction['Modèle utilisé']}** à estimé la consommation à **{prediction['Prédiction (kWh)']} kWh**")
                 else:
                     # Gestion des erreurs API
                     st.error(f"🚨 Erreur: {response.json().get('detail', 'Impossible d’effectuer la prédiction.')}")
