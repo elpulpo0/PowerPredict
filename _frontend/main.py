@@ -8,7 +8,7 @@ st.set_page_config(
     page_title="PowerPredict",
     page_icon="\U0001F4CA",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
 )
 
 # Fonction pour vérifier la santé de l'API
